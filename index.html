@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLA Grupo Inmobiliario</title>
+  <meta name="description" content="OLA Grupo Inmobiliario — presentación de propiedades y atención personalizada." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#hero" class="brand">
+        <img class="brand-mark" src="assets/img/ola-logo.png" alt="OLA logo" />
+        <div class="brand-copy">
+          <div class="brand-name">OLA Grupo Inmobiliario</div>
+          <div class="brand-sub" data-i18n="brand.sub"></div>
+        </div>
+      </a>
+
+      <div class="nav">
+        <nav class="nav-links">
+          <a class="nav-link" href="#about" data-i18n="nav.about"></a>
+          <a class="nav-link" href="#process" data-i18n="nav.process"></a>
+          <a class="nav-link" href="#properties" data-i18n="nav.properties"></a>
+          <a class="nav-link" href="#testimonials" data-i18n="nav.testimonials"></a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact"></a>
+        </nav>
+
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="hero.eyebrow"></div>
+          <h1 data-i18n="hero.title"></h1>
+          <p data-i18n="hero.text"></p>
+
+          <div class="hero-actions">
+            <a class="button" id="hero-whatsapp" target="_blank" rel="noopener noreferrer" href="#" data-i18n="hero.primary"></a>
+            <a class="button-secondary" href="#properties" data-i18n="hero.secondary"></a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-value">2+</div>
+              <div class="stat-label" data-i18n="hero.stats.properties"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">100%</div>
+              <div class="stat-label" data-i18n="hero.stats.process"></div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">WhatsApp</div>
+              <div class="stat-label" data-i18n="hero.stats.contact"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-image">
+            <img id="hero-image" alt="Featured property" />
+            <div class="hero-overlay">
+              <div class="hero-overlay-title" id="hero-overlay-title"></div>
+              <div class="hero-overlay-text" id="hero-overlay-text"></div>
+            </div>
+          </div>
+          <div class="mini-note" data-i18n="hero.note"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="about.eyebrow"></div>
+            <h2 data-i18n="about.title"></h2>
+            <div class="section-lead" data-i18n="about.lead"></div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="about-grid">
+            <div class="info-box">
+              <h3 data-i18n="about.box1.title"></h3>
+              <div class="muted" data-i18n="about.box1.text"></div>
+            </div>
+            <div class="info-box">
+              <h3 data-i18n="about.box2.title"></h3>
+              <div class="muted" data-i18n="about.box2.text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="process.eyebrow"></div>
+            <h2 data-i18n="process.title"></h2>
+            <div class="section-lead" data-i18n="process.lead"></div>
+          </div>
+        </div>
+        <div class="steps" id="steps"></div>
+      </div>
+    </section>
+
+    <section id="properties">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="properties.eyebrow"></div>
+            <h2 data-i18n="properties.title"></h2>
+            <div class="section-lead" data-i18n="properties.lead"></div>
+          </div>
+        </div>
+        <div class="properties-grid" id="properties-grid"></div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" data-i18n="testimonials.eyebrow"></div>
+            <h2 data-i18n="testimonials.title"></h2>
+            <div class="section-lead" data-i18n="testimonials.lead"></div>
+          </div>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <div class="eyebrow" data-i18n="contact.eyebrow"></div>
+          <h2 data-i18n="contact.title"></h2>
+          <div class="section-lead" data-i18n="contact.lead"></div>
+          <div class="hero-actions">
+            <a class="button" id="contact-whatsapp" target="_blank" rel="noopener noreferrer" href="#" data-i18n="contact.primary"></a>
+            <a class="button-secondary" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-i18n="contact.secondary"></a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 data-i18n="contact.cardTitle"></h3>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.item1"></span> <a class="contact-link" href="https://wa.me/529671922636" target="_blank" rel="noopener noreferrer">+52 967 192 2636</a></li>
+            <li data-i18n="contact.item2"></li>
+            <li data-i18n="contact.item3"></li>
+            <li data-i18n="contact.item4"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-name">OLA Grupo Inmobiliario</div>
+          <div class="footer-text" data-i18n="footer.text"></div>
+        </div>
+        <div class="footer-notes">
+          <div class="mini-note" data-i18n="footer.note1"></div>
+          <div class="mini-note" data-i18n="footer.note2"></div>
+          <div class="mini-note" data-i18n="footer.note3"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+    <div class="gallery-panel">
+      <div class="gallery-head">
+        <div>
+          <div class="eyebrow" data-i18n="gallery.eyebrow"></div>
+          <h3 id="gallery-title"></h3>
+          <div class="muted" id="gallery-subtitle"></div>
+        </div>
+        <button class="gallery-close" id="gallery-close" aria-label="Close gallery">✕</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </div>
+
+  <script src="data/properties.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
