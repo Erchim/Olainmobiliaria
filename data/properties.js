@@ -46,5 +46,30 @@ const propertyData = [
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
       "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80"
     ]
+  },
+  {
+    id: "coca-cola-commercial",
+    type: "land",
+    status: "available",
+    area: "256 m²",
+    services: ["Agua", "Luz", "Drenaje"],
+    zoneEs: "Cerca de la zona Coca-Cola, San Cristóbal",
+    zoneEn: "Near the Coca-Cola area, San Cristóbal",
+    titleEs: "Terreno urbano en venta cerca de Coca-Cola",
+    titleEn: "Urban land for sale near Coca-Cola",
+    shortEs: "Terreno urbano de 256 m² ubicado cerca de la zona Coca-Cola en San Cristóbal de las Casas. Cuenta con agua, luz y drenaje, y se encuentra en un entorno urbano con buena conectividad y vista abierta hacia la ciudad.",
+    shortEn: "Urban land of 256 m² located near the Coca-Cola area in San Cristóbal de las Casas. It has water, electricity and drainage, and is situated in an urban setting with good connectivity and open views over the city.",
+    featuresEs: ["256 m²", "Agua", "Luz", "Drenaje", "Cerca de Coca-Cola", "Entorno urbano", "Vista abierta", "Buena conectividad"],
+    featuresEn: ["256 m²", "Water", "Electricity", "Drainage", "Near Coca-Cola", "Urban surroundings", "Open view", "Good connectivity"],
+    badgeEs: "Nueva propiedad",
+    badgeEn: "New property",
+    whatsappEs: "Hola, vi el terreno urbano cerca de Coca-Cola en su sitio y me gustaría recibir más información.",
+    whatsappEn: "Hi, I saw the urban land near the Coca-Cola area on your website and I would like more information.",
+    image: "assets/properties/coca-cola-commercial/cover.jpg",
+    gallery: [
+      "assets/properties/coca-cola-commercial/1.jpg",
+      "assets/properties/coca-cola-commercial/2.jpg",
+      "assets/properties/coca-cola-commercial/3.jpg"
+    ]
   }
 ];

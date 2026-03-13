@@ -29,7 +29,7 @@ const translations = {
     "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",
     "properties.eyebrow": "Propiedades destacadas",
     "properties.title": "Una base limpia para mostrar oportunidades reales.",
-    "properties.lead": "En esta primera versión del sitio mostramos dos propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
+    "properties.lead": "En esta versión del sitio ya mostramos varias propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
     "testimonials.eyebrow": "Confianza",
     "testimonials.title": "Espacio listo para testimonios reales.",
     "testimonials.lead": "Por ahora este bloque funciona como placeholder elegante. Más adelante se puede reemplazar con reseñas reales, casos de compra o experiencias verificadas.",
@@ -77,7 +77,7 @@ const translations = {
     "process.lead": "The goal is not to overwhelm the client with information, but to guide them step by step with order, context and trust.",
     "properties.eyebrow": "Featured properties",
     "properties.title": "A clean base for presenting real opportunities.",
-    "properties.lead": "In this first website version we show two properties and leave the structure ready to add more land or homes in the future.",
+    "properties.lead": "This website version already shows several properties and keeps the structure ready to add more land or homes in the future.",
     "testimonials.eyebrow": "Trust",
     "testimonials.title": "A section ready for real testimonials.",
     "testimonials.lead": "For now this block works as an elegant placeholder. Later it can be replaced with real reviews, purchase stories or verified client experiences.",
@@ -128,15 +128,13 @@ const testimonials = {
 };
 
 let currentLang = "es";
+let currentGalleryProperty = null;
+let currentLightboxIndex = 0;
 
 function makeWhatsAppLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
-
-function t(key) {
-  return translations[currentLang][key] || key;
-}
-
+function t(key) { return translations[currentLang][key] || key; }
 function applyTranslations() {
   document.documentElement.lang = currentLang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -144,7 +142,6 @@ function applyTranslations() {
     el.textContent = t(key);
   });
 }
-
 function renderProcess() {
   const stepsContainer = document.getElementById("steps");
   stepsContainer.innerHTML = "";
@@ -159,11 +156,9 @@ function renderProcess() {
     stepsContainer.appendChild(article);
   });
 }
-
 function renderProperties() {
   const grid = document.getElementById("properties-grid");
   grid.innerHTML = "";
-
   propertyData.forEach((property) => {
     const title = currentLang === "es" ? property.titleEs : property.titleEn;
     const description = currentLang === "es" ? property.shortEs : property.shortEn;
@@ -172,7 +167,6 @@ function renderProperties() {
     const features = currentLang === "es" ? property.featuresEs : property.featuresEn;
     const services = property.services.join(" • ");
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
-
     const article = document.createElement("article");
     article.className = "property-card";
     article.innerHTML = `
@@ -203,7 +197,6 @@ function renderProperties() {
     `;
     grid.appendChild(article);
   });
-
   const emptyCard = document.createElement("div");
   emptyCard.className = "empty-card";
   emptyCard.innerHTML = `
@@ -213,10 +206,8 @@ function renderProperties() {
     </div>
   `;
   grid.appendChild(emptyCard);
-
   bindGalleryButtons();
 }
-
 function renderTestimonials() {
   const grid = document.getElementById("testimonials-grid");
   grid.innerHTML = "";
@@ -231,7 +222,6 @@ function renderTestimonials() {
     grid.appendChild(article);
   });
 }
-
 function updateHero() {
   const firstProperty = propertyData[0];
   document.getElementById("hero-image").src = firstProperty.image;
@@ -241,7 +231,6 @@ function updateHero() {
   document.getElementById("hero-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi el sitio de OLA Grupo Inmobiliario y quiero más información." : "Hi, I saw the OLA Grupo Inmobiliario website and I would like more information.");
   document.getElementById("contact-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, quiero recibir información sobre sus propiedades." : "Hi, I would like to receive information about your properties.");
 }
-
 function bindLanguageButtons() {
   document.querySelectorAll(".lang-btn").forEach((button) => {
     button.addEventListener("click", () => {
@@ -253,49 +242,88 @@ function bindLanguageButtons() {
     });
   });
 }
-
 function openGallery(propertyId) {
   const property = propertyData.find((item) => item.id === propertyId);
   if (!property) return;
+  currentGalleryProperty = property;
   document.getElementById("gallery-title").textContent = currentLang === "es" ? property.titleEs : property.titleEn;
   document.getElementById("gallery-subtitle").textContent = currentLang === "es" ? property.zoneEs : property.zoneEn;
   const galleryGrid = document.getElementById("gallery-grid");
-  galleryGrid.innerHTML = property.gallery.map((image, index) => `<img src="${image}" alt="${(currentLang === "es" ? property.titleEs : property.titleEn) + " " + (index + 1)}" />`).join("");
+  galleryGrid.innerHTML = property.gallery.map((image, index) => `<img class="gallery-thumb" data-index="${index}" src="${image}" alt="${(currentLang === "es" ? property.titleEs : property.titleEn) + " " + (index + 1)}" />`).join("");
   const modal = document.getElementById("gallery-modal");
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  bindGalleryThumbs();
 }
-
 function closeGallery() {
   const modal = document.getElementById("gallery-modal");
   modal.classList.remove("active");
   modal.setAttribute("aria-hidden", "true");
+  if (!document.getElementById("lightbox-modal").classList.contains("active")) document.body.classList.remove("modal-open");
 }
-
+function openLightbox(index) {
+  if (!currentGalleryProperty) return;
+  currentLightboxIndex = index;
+  const images = currentGalleryProperty.gallery;
+  const title = currentLang === "es" ? currentGalleryProperty.titleEs : currentGalleryProperty.titleEn;
+  document.getElementById("lightbox-image").src = images[currentLightboxIndex];
+  document.getElementById("lightbox-image").alt = `${title} ${currentLightboxIndex + 1}`;
+  document.getElementById("lightbox-caption").textContent = `${title} — ${currentLightboxIndex + 1}/${images.length}`;
+  document.getElementById("lightbox-prev").disabled = currentLightboxIndex === 0;
+  document.getElementById("lightbox-next").disabled = currentLightboxIndex === images.length - 1;
+  const modal = document.getElementById("lightbox-modal");
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+function closeLightbox() {
+  const modal = document.getElementById("lightbox-modal");
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  if (!document.getElementById("gallery-modal").classList.contains("active")) document.body.classList.remove("modal-open");
+}
+function showPrevImage() { if (currentGalleryProperty && currentLightboxIndex > 0) openLightbox(currentLightboxIndex - 1); }
+function showNextImage() { if (currentGalleryProperty && currentLightboxIndex < currentGalleryProperty.gallery.length - 1) openLightbox(currentLightboxIndex + 1); }
 function bindGalleryButtons() {
   document.querySelectorAll(".open-gallery").forEach((button) => {
     button.addEventListener("click", () => openGallery(button.dataset.id));
   });
 }
-
-function bindModal() {
-  document.getElementById("gallery-close").addEventListener("click", closeGallery);
-  document.getElementById("gallery-modal").addEventListener("click", (event) => {
-    if (event.target.id === "gallery-modal") closeGallery();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeGallery();
+function bindGalleryThumbs() {
+  document.querySelectorAll(".gallery-thumb").forEach((img) => {
+    img.addEventListener("click", () => openLightbox(Number(img.dataset.index)));
   });
 }
-
+function bindModal() {
+  document.getElementById("gallery-close").addEventListener("click", closeGallery);
+  document.getElementById("gallery-modal").addEventListener("click", (event) => { if (event.target.id === "gallery-modal") closeGallery(); });
+  document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+  document.getElementById("lightbox-prev").addEventListener("click", showPrevImage);
+  document.getElementById("lightbox-next").addEventListener("click", showNextImage);
+  document.getElementById("lightbox-modal").addEventListener("click", (event) => { if (event.target.id === "lightbox-modal") closeLightbox(); });
+  document.addEventListener("keydown", (event) => {
+    const lightboxOpen = document.getElementById("lightbox-modal").classList.contains("active");
+    const galleryOpen = document.getElementById("gallery-modal").classList.contains("active");
+    if (event.key === "Escape") {
+      if (lightboxOpen) return closeLightbox();
+      if (galleryOpen) return closeGallery();
+    }
+    if (lightboxOpen && event.key === "ArrowLeft") showPrevImage();
+    if (lightboxOpen && event.key === "ArrowRight") showNextImage();
+  });
+}
 function renderAll() {
   applyTranslations();
   renderProcess();
   renderProperties();
   renderTestimonials();
   updateHero();
+  if (document.getElementById("gallery-modal").classList.contains("active")) {
+    closeLightbox();
+    closeGallery();
+  }
 }
-
 bindLanguageButtons();
 bindModal();
 renderAll();
