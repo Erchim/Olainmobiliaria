@@ -306,3 +306,34 @@ section { padding: 28px 0; }
   .lightbox-close { top: 16px; right: 16px; }
   #lightbox-image { max-width: 94vw; max-height: calc(100vh - 190px); }
 }
+
+
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #25D366, #1fa855);
+  color: #04140b;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.floating-whatsapp:hover {
+  transform: translateY(-1px);
+}
+@media (max-width: 760px) {
+  .floating-whatsapp {
+    right: 14px;
+    bottom: 14px;
+    min-width: 0;
+    padding: 14px 16px;
+  }
+}

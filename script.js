@@ -47,7 +47,8 @@ const translations = {
     "footer.note1": "Información sujeta a disponibilidad y cambios sin previo aviso.",
     "footer.note2": "Las visitas se coordinan con cita previa.",
     "footer.note3": "La documentación completa se comparte dentro del proceso de atención según el perfil del prospecto.",
-    "gallery.eyebrow": "Galería"
+    "gallery.eyebrow": "Galería",
+    "floating.whatsapp": "WhatsApp"
   },
   en: {
     "brand.sub": "Property sales and acquisition with personalized attention",
@@ -95,7 +96,8 @@ const translations = {
     "footer.note1": "Information subject to availability and changes without prior notice.",
     "footer.note2": "Visits are scheduled by appointment.",
     "footer.note3": "Complete documentation is shared during the service process according to the prospect profile.",
-    "gallery.eyebrow": "Gallery"
+    "gallery.eyebrow": "Gallery",
+    "floating.whatsapp": "WhatsApp"
   }
 };
 
@@ -230,6 +232,11 @@ function updateHero() {
   document.getElementById("hero-overlay-text").textContent = currentLang === "es" ? firstProperty.shortEs : firstProperty.shortEn;
   document.getElementById("hero-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi el sitio de OLA Grupo Inmobiliario y quiero más información." : "Hi, I saw the OLA Grupo Inmobiliario website and I would like more information.");
   document.getElementById("contact-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, quiero recibir información sobre sus propiedades." : "Hi, I would like to receive information about your properties.");
+  const floating = document.getElementById("floating-whatsapp");
+  if (floating) {
+    floating.href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi su sitio web y me gustaría recibir información sobre sus propiedades." : "Hi, I saw your website and I would like information about your properties.");
+    floating.textContent = t("floating.whatsapp");
+  }
 }
 function bindLanguageButtons() {
   document.querySelectorAll(".lang-btn").forEach((button) => {
