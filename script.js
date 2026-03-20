@@ -4,10 +4,17 @@ const translations = {
   es: {
     "brand.sub": "Compra y venta de propiedades con atención personalizada",
     "nav.about": "Nosotros",
+    "nav.focus": "Enfoque",
     "nav.process": "Proceso",
     "nav.properties": "Propiedades",
     "nav.testimonials": "Testimonios",
     "nav.contact": "Contacto",
+    "trust.card1.title": "Información cuidada",
+    "trust.card1.text": "Compartimos detalles sensibles en la etapa correcta del proceso para proteger al cliente y a la operación.",
+    "trust.card2.title": "Visitas con contexto",
+    "trust.card2.text": "Primero entendemos la intención del prospecto y después avanzamos con visitas y seguimiento más claros.",
+    "trust.card3.title": "Atención directa",
+    "trust.card3.text": "El sitio funciona como vitrina de confianza y como entrada a una conversación real por WhatsApp.",
     "hero.eyebrow": "Presentación profesional y atención directa",
     "hero.title": "Propiedades seleccionadas con una experiencia clara y confiable.",
     "hero.text": "OLA Grupo Inmobiliario funciona como una vitrina seria y elegante para presentar oportunidades, generar confianza y acompañar a cada prospecto con un proceso más ordenado y seguro.",
@@ -18,18 +25,44 @@ const translations = {
     "hero.stats.contact": "Canal principal de atención",
     "hero.note": "Versión inicial del sitio preparada para crecer con más propiedades, testimonios y contenido institucional sin romper la estructura del proyecto.",
     "about.eyebrow": "Nosotros",
-    "about.title": "Una presentación sencilla, seria y preparada para crecer.",
-    "about.lead": "Este sitio está pensado como una vitrina profesional para mostrar propiedades, fortalecer la confianza del cliente y facilitar un primer contacto más claro a través de WhatsApp.",
-    "about.box1.title": "Por qué elegirnos",
+    "about.title": "Una inmobiliaria en construcción, presentada con orden y seriedad.",
+    "about.lead": "OLA Grupo Inmobiliario está construyendo una presencia profesional para presentar oportunidades reales, filtrar mejor a los prospectos y acompañar el proceso con más claridad desde el primer contacto.",
+    "about.box1.title": "Por qué elegir OLA",
     "about.box1.text": "Priorizamos una comunicación directa, una presentación cuidada y un proceso de atención más ordenado. La información sensible se comparte en la etapa correcta para proteger tanto al cliente como a la operación.",
-    "about.box2.title": "Cómo trabajamos",
+    "about.box2.title": "Proceso de trabajo",
     "about.box2.text": "Primero calificamos la intención del prospecto, después coordinamos la visita y más adelante compartimos la documentación relevante dentro del proceso. Esto ayuda a mantener claridad, seguridad y seriedad.",
+    "focus.eyebrow": "Nuestro enfoque",
+    "focus.title": "Más vitrina útil, menos ruido.",
+    "focus.lead": "La idea del sitio no es prometer demasiado, sino presentar mejor las oportunidades correctas y llevar la conversación al canal adecuado.",
+    "focus.card1.title": "Selección visible",
+    "focus.card1.text": "Mostramos propiedades con una presentación más limpia y cuidada, sin publicar detalles sensibles antes de tiempo.",
+    "focus.card2.title": "Seguimiento real",
+    "focus.card2.text": "El sitio está pensado para abrir una conversación útil por WhatsApp y continuar el proceso con contexto, no con respuestas automáticas vacías.",
+    "focus.card3.title": "Crecimiento ordenado",
+    "focus.card3.text": "La estructura está lista para sumar más terrenos, casas, testimonios y activos digitales sin rehacer todo desde cero.",
+    "properties.filter.all": "Todos",
+    "properties.filter.private": "Privado",
+    "properties.filter.urban": "Urbano",
+    "properties.filter.rustic": "Rústico",
+    "cta.eyebrow": "Siguiente paso",
+    "cta.title": "Si una propiedad te interesa, conversemos directamente.",
+    "cta.text": "Una conversación breve por WhatsApp ayuda a entender intención, resolver dudas iniciales y decidir si vale la pena avanzar con visita y seguimiento.",
+    "cta.primary": "Hablar por WhatsApp",
+    "cta.secondary": "Volver a propiedades",
+    "cta.quickInvest": "Quiero invertir",
+    "cta.quickBuild": "Quiero construir",
+    "cta.quickVisit": "Quiero agendar visita",
+    "properties.emptyTitle": "No hay propiedades en este filtro todavía",
+    "properties.emptyText": "Puedes volver a "Todos" o escribirnos por WhatsApp para preguntar por otras opciones disponibles.",
     "process.eyebrow": "Proceso de atención",
     "process.title": "Un proceso simple, claro y profesional.",
     "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",
     "properties.eyebrow": "Propiedades destacadas",
     "properties.title": "Una base limpia para mostrar oportunidades reales.",
     "properties.lead": "En esta versión del sitio ya mostramos varias propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
+    "properties.note": "La ubicación exacta, el precio final y la documentación completa se comparten dentro del proceso de atención con prospectos calificados.",
+    "properties.photos": "fotos",
+    "gallery.hint": "Toca o haz clic en una foto para verla en tamaño completo.",
     "testimonials.eyebrow": "Confianza",
     "testimonials.title": "Espacio listo para testimonios reales.",
     "testimonials.lead": "Por ahora este bloque funciona como placeholder elegante. Más adelante se puede reemplazar con reseñas reales, casos de compra o experiencias verificadas.",
@@ -53,10 +86,17 @@ const translations = {
   en: {
     "brand.sub": "Property sales and acquisition with personalized attention",
     "nav.about": "About",
+    "nav.focus": "Approach",
     "nav.process": "Process",
     "nav.properties": "Properties",
     "nav.testimonials": "Testimonials",
     "nav.contact": "Contact",
+    "trust.card1.title": "Protected information",
+    "trust.card1.text": "Sensitive details are shared at the right stage of the process to protect both the client and the operation.",
+    "trust.card2.title": "Visits with context",
+    "trust.card2.text": "We first understand the prospect’s intent and then move forward with clearer visits and follow-up.",
+    "trust.card3.title": "Direct attention",
+    "trust.card3.text": "The website works as a trust showcase and as the entry point to a real WhatsApp conversation.",
     "hero.eyebrow": "Professional presentation and direct attention",
     "hero.title": "Selected properties with a clear and trustworthy experience.",
     "hero.text": "OLA Grupo Inmobiliario is designed as a serious and elegant showcase for opportunities, helping build trust and guiding each prospect through a more organized and secure process.",
@@ -67,18 +107,44 @@ const translations = {
     "hero.stats.contact": "Main contact channel",
     "hero.note": "Initial website version prepared to grow with more properties, testimonials and institutional content without breaking the project structure.",
     "about.eyebrow": "About",
-    "about.title": "A simple, serious presentation built to grow.",
-    "about.lead": "This website is designed as a professional showcase to present properties, strengthen buyer trust and support clearer first contact through WhatsApp.",
-    "about.box1.title": "Why choose us",
+    "about.title": "A real estate brand in the making, presented with structure and seriousness.",
+    "about.lead": "OLA Grupo Inmobiliario is building a professional presence to present real opportunities, filter prospects better and guide the process with more clarity from the first contact.",
+    "about.box1.title": "Why choose OLA",
     "about.box1.text": "We prioritize direct communication, careful presentation and a more structured service process. Sensitive information is shared at the right stage to protect both the client and the operation.",
-    "about.box2.title": "How we work",
+    "about.box2.title": "How the process works",
     "about.box2.text": "We first confirm the prospect’s intent, then coordinate the visit, and later share relevant documentation within the process. This helps maintain clarity, security and professionalism.",
+    "focus.eyebrow": "Our approach",
+    "focus.title": "More useful showcase, less noise.",
+    "focus.lead": "The goal of the site is not to overpromise, but to present the right opportunities better and move the conversation to the right channel.",
+    "focus.card1.title": "Visible selection",
+    "focus.card1.text": "We present properties in a cleaner and more careful way without publishing sensitive details too early.",
+    "focus.card2.title": "Real follow-up",
+    "focus.card2.text": "The website is meant to open a useful WhatsApp conversation and continue the process with context, not empty automated replies.",
+    "focus.card3.title": "Ordered growth",
+    "focus.card3.text": "The structure is ready to add more lots, houses, testimonials and digital assets without rebuilding everything from scratch.",
+    "properties.filter.all": "All",
+    "properties.filter.private": "Private",
+    "properties.filter.urban": "Urban",
+    "properties.filter.rustic": "Rustic",
+    "cta.eyebrow": "Next step",
+    "cta.title": "If a property interests you, let’s talk directly.",
+    "cta.text": "A short WhatsApp conversation helps us understand intent, answer initial questions and decide whether it makes sense to move forward with a visit and follow-up.",
+    "cta.primary": "Chat on WhatsApp",
+    "cta.secondary": "Back to properties",
+    "cta.quickInvest": "I want to invest",
+    "cta.quickBuild": "I want to build",
+    "cta.quickVisit": "I want to schedule a visit",
+    "properties.emptyTitle": "There are no properties in this filter yet",
+    "properties.emptyText": "You can switch back to \"All\" or message us on WhatsApp to ask about other available options.",
     "process.eyebrow": "Service process",
     "process.title": "A simple, clear and professional process.",
     "process.lead": "The goal is not to overwhelm the client with information, but to guide them step by step with order, context and trust.",
     "properties.eyebrow": "Featured properties",
     "properties.title": "A clean base for presenting real opportunities.",
     "properties.lead": "This website version already shows several properties and keeps the structure ready to add more land or homes in the future.",
+    "properties.note": "Exact location, final price and full documentation are shared during the service process with qualified prospects.",
+    "properties.photos": "photos",
+    "gallery.hint": "Tap or click on a photo to view it full size.",
     "testimonials.eyebrow": "Trust",
     "testimonials.title": "A section ready for real testimonials.",
     "testimonials.lead": "For now this block works as an elegant placeholder. Later it can be replaced with real reviews, purchase stories or verified client experiences.",
@@ -132,6 +198,14 @@ const testimonials = {
 let currentLang = "es";
 let currentGalleryProperty = null;
 let currentLightboxIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+let activeFilter = "all";
+
+const statusLabels = {
+  es: { available: "Disponible", reserved: "En proceso", sold: "Vendido" },
+  en: { available: "Available", reserved: "In progress", sold: "Sold" }
+};
 
 function makeWhatsAppLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -144,6 +218,27 @@ function applyTranslations() {
     el.textContent = t(key);
   });
 }
+
+function renderQuickIntents() {
+  const container = document.getElementById("cta-quick");
+  if (!container) return;
+  const intents = currentLang === "es"
+    ? [
+        { label: t("cta.quickInvest"), message: "Hola, vi su sitio y me interesa conocer opciones de inversión. [Fuente: CTA rápido]" },
+        { label: t("cta.quickBuild"), message: "Hola, vi su sitio y me interesa un terreno para construir. [Fuente: CTA rápido]" },
+        { label: t("cta.quickVisit"), message: "Hola, vi su sitio y me gustaría agendar una visita. [Fuente: CTA rápido]" }
+      ]
+    : [
+        { label: t("cta.quickInvest"), message: "Hi, I saw your website and I am interested in investment options. [Source: quick CTA]" },
+        { label: t("cta.quickBuild"), message: "Hi, I saw your website and I am interested in land to build on. [Source: quick CTA]" },
+        { label: t("cta.quickVisit"), message: "Hi, I saw your website and I would like to schedule a visit. [Source: quick CTA]" }
+      ];
+
+  container.innerHTML = intents
+    .map((intent) => `<a class="quick-intent" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(intent.message)}">${intent.label}</a>`)
+    .join("");
+}
+
 function renderProcess() {
   const stepsContainer = document.getElementById("steps");
   stepsContainer.innerHTML = "";
@@ -161,20 +256,42 @@ function renderProcess() {
 function renderProperties() {
   const grid = document.getElementById("properties-grid");
   grid.innerHTML = "";
-  propertyData.forEach((property) => {
+  const visibleProperties = activeFilter === "all"
+    ? propertyData
+    : propertyData.filter((property) => property.filter === activeFilter);
+
+  if (visibleProperties.length === 0) {
+    grid.innerHTML = `
+      <div class="no-results-card">
+        <div>
+          <h3>${t("properties.emptyTitle")}</h3>
+          <div class="muted">${t("properties.emptyText")}</div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  visibleProperties.forEach((property) => {
     const title = currentLang === "es" ? property.titleEs : property.titleEn;
     const description = currentLang === "es" ? property.shortEs : property.shortEn;
     const zone = currentLang === "es" ? property.zoneEs : property.zoneEn;
     const badge = currentLang === "es" ? property.badgeEs : property.badgeEn;
     const features = currentLang === "es" ? property.featuresEs : property.featuresEn;
+    const tags = currentLang === "es" ? (property.tagsEs || []) : (property.tagsEn || []);
     const services = property.services.join(" • ");
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
     const article = document.createElement("article");
     article.className = "property-card";
+    article.id = `property-${property.id}`;
     article.innerHTML = `
       <div class="property-image">
-        <img src="${property.image}" alt="${title}" />
+        <a class="property-image-link open-gallery" data-id="${property.id}" aria-label="${currentLang === "es" ? "Abrir galería" : "Open gallery"}">
+          <img loading="lazy" src="${property.image}" alt="${title}" />
+        </a>
         <div class="property-badge">${badge}</div>
+        <div class="property-status">${statusLabels[currentLang][property.status] || (currentLang === "es" ? "Disponible" : "Available")}</div>
+        <div class="photo-count">${property.gallery.length} ${t("properties.photos")}</div>
       </div>
       <div class="property-body">
         <div class="property-top">
@@ -189,10 +306,11 @@ function renderProperties() {
         </div>
         <div class="muted">${description}</div>
         <div class="features">
+          ${tags.map((tag) => `<span class="feature-pill">${tag}</span>`).join("")}
           ${features.map((feature) => `<span class="feature-pill">${feature}</span>`).join("")}
         </div>
         <div class="property-actions">
-          <a class="button" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(message)}">${currentLang === "es" ? "Solicitar información" : "Request information"}</a>
+          <a class="button" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(message + (currentLang === "es" ? " [Fuente: ficha del sitio]" : " [Source: website property card]"))}">${currentLang === "es" ? "Solicitar información" : "Request information"}</a>
           <button class="button-secondary open-gallery" data-id="${property.id}">${currentLang === "es" ? "Ver fotos" : "View gallery"}</button>
         </div>
       </div>
@@ -210,6 +328,34 @@ function renderProperties() {
   grid.appendChild(emptyCard);
   bindGalleryButtons();
 }
+
+
+function renderPropertyFilters() {
+  const container = document.getElementById("property-filters");
+  if (!container) return;
+  container.innerHTML = "";
+  const filters = ["all", ...Array.from(new Set(propertyData.map((property) => property.filter).filter(Boolean)))];
+  filters.forEach((filterKey) => {
+    const button = document.createElement("button");
+    button.className = "property-filter" + (activeFilter === filterKey ? " active" : "");
+    button.type = "button";
+    button.textContent = t(`properties.filter.${filterKey}`);
+    button.addEventListener("click", () => {
+      activeFilter = filterKey;
+      renderProperties();
+      renderPropertyFilters();
+    });
+    container.appendChild(button);
+  });
+  const counter = document.getElementById("stat-properties-count");
+  if (counter) {
+    const count = activeFilter === "all"
+      ? propertyData.length
+      : propertyData.filter((property) => property.filter === activeFilter).length;
+    counter.textContent = String(count);
+  }
+}
+
 function renderTestimonials() {
   const grid = document.getElementById("testimonials-grid");
   grid.innerHTML = "";
@@ -234,7 +380,7 @@ function updateHero() {
   document.getElementById("contact-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, quiero recibir información sobre sus propiedades." : "Hi, I would like to receive information about your properties.");
   const floating = document.getElementById("floating-whatsapp");
   if (floating) {
-    floating.href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi su sitio web y me gustaría recibir información sobre sus propiedades." : "Hi, I saw your website and I would like information about your properties.");
+    floating.href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi su sitio web y me gustaría recibir información sobre sus propiedades. [Fuente: botón flotante]" : "Hi, I saw your website and I would like information about your properties. [Source: floating button]");
     floating.textContent = t("floating.whatsapp");
   }
 }
@@ -256,7 +402,7 @@ function openGallery(propertyId) {
   document.getElementById("gallery-title").textContent = currentLang === "es" ? property.titleEs : property.titleEn;
   document.getElementById("gallery-subtitle").textContent = currentLang === "es" ? property.zoneEs : property.zoneEn;
   const galleryGrid = document.getElementById("gallery-grid");
-  galleryGrid.innerHTML = property.gallery.map((image, index) => `<img class="gallery-thumb" data-index="${index}" src="${image}" alt="${(currentLang === "es" ? property.titleEs : property.titleEn) + " " + (index + 1)}" />`).join("");
+  galleryGrid.innerHTML = property.gallery.map((image, index) => `<img loading="lazy" class="gallery-thumb" data-index="${index}" src="${image}" alt="${(currentLang === "es" ? property.titleEs : property.titleEn) + " " + (index + 1)}" />`).join("");
   const modal = document.getElementById("gallery-modal");
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
@@ -320,12 +466,25 @@ function bindModal() {
     if (lightboxOpen && event.key === "ArrowRight") showNextImage();
   });
 }
+
+function updateCTA() {
+  const cta = document.getElementById("cta-whatsapp");
+  if (!cta) return;
+  cta.href = makeWhatsAppLink(
+    currentLang === "es"
+      ? "Hola, vi su sitio web y me interesa una de sus propiedades. [Fuente: CTA final]"
+      : "Hi, I saw your website and I am interested in one of your properties. [Source: final CTA]"
+  );
+}
+
 function renderAll() {
   applyTranslations();
   renderProcess();
+  renderPropertyFilters();
   renderProperties();
   renderTestimonials();
   updateHero();
+  updateCTA();
   if (document.getElementById("gallery-modal").classList.contains("active")) {
     closeLightbox();
     closeGallery();
