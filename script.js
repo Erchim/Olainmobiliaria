@@ -53,7 +53,7 @@ const translations = {
     "cta.quickBuild": "Quiero construir",
     "cta.quickVisit": "Quiero agendar visita",
     "properties.emptyTitle": "No hay propiedades en este filtro todavía",
-    "properties.emptyText": "Puedes volver a "Todos" o escribirnos por WhatsApp para preguntar por otras opciones disponibles.",
+    "properties.emptyText": "Puedes volver a \"Todos\" o escribirnos por WhatsApp para preguntar por otras opciones disponibles.",
     "process.eyebrow": "Proceso de atención",
     "process.title": "Un proceso simple, claro y profesional.",
     "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",

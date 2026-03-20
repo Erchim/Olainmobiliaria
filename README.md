@@ -44,3 +44,8 @@ Cambios principales:
 - Mejor manejo del caso sin resultados al usar filtros
 - Anclas internas por propiedad para facilitar futuras referencias o enlaces
 - Mejor rastreo del CTA principal hacia WhatsApp
+
+
+## Fix rápido
+- Corregido error de sintaxis en `script.js` por comillas no escapadas en textos de filtros.
+- Validación de sintaxis JS: OK
