@@ -4,7 +4,6 @@ const translations = {
   es: {
     "brand.sub": "Compra y venta de propiedades con atención personalizada",
     "nav.about": "Nosotros",
-    "nav.focus": "Enfoque",
     "nav.process": "Proceso",
     "nav.properties": "Propiedades",
     "nav.testimonials": "Testimonios",
@@ -31,29 +30,6 @@ const translations = {
     "about.box1.text": "Priorizamos una comunicación directa, una presentación cuidada y un proceso de atención más ordenado. La información sensible se comparte en la etapa correcta para proteger tanto al cliente como a la operación.",
     "about.box2.title": "Proceso de trabajo",
     "about.box2.text": "Primero calificamos la intención del prospecto, después coordinamos la visita y más adelante compartimos la documentación relevante dentro del proceso. Esto ayuda a mantener claridad, seguridad y seriedad.",
-    "focus.eyebrow": "Nuestro enfoque",
-    "focus.title": "Más vitrina útil, menos ruido.",
-    "focus.lead": "La idea del sitio no es prometer demasiado, sino presentar mejor las oportunidades correctas y llevar la conversación al canal adecuado.",
-    "focus.card1.title": "Selección visible",
-    "focus.card1.text": "Mostramos propiedades con una presentación más limpia y cuidada, sin publicar detalles sensibles antes de tiempo.",
-    "focus.card2.title": "Seguimiento real",
-    "focus.card2.text": "El sitio está pensado para abrir una conversación útil por WhatsApp y continuar el proceso con contexto, no con respuestas automáticas vacías.",
-    "focus.card3.title": "Crecimiento ordenado",
-    "focus.card3.text": "La estructura está lista para sumar más terrenos, casas, testimonios y activos digitales sin rehacer todo desde cero.",
-    "properties.filter.all": "Todos",
-    "properties.filter.private": "Privado",
-    "properties.filter.urban": "Urbano",
-    "properties.filter.rustic": "Rústico",
-    "cta.eyebrow": "Siguiente paso",
-    "cta.title": "Si una propiedad te interesa, conversemos directamente.",
-    "cta.text": "Una conversación breve por WhatsApp ayuda a entender intención, resolver dudas iniciales y decidir si vale la pena avanzar con visita y seguimiento.",
-    "cta.primary": "Hablar por WhatsApp",
-    "cta.secondary": "Volver a propiedades",
-    "cta.quickInvest": "Quiero invertir",
-    "cta.quickBuild": "Quiero construir",
-    "cta.quickVisit": "Quiero agendar visita",
-    "properties.emptyTitle": "No hay propiedades en este filtro todavía",
-    "properties.emptyText": "Puedes volver a \"Todos\" o escribirnos por WhatsApp para preguntar por otras opciones disponibles.",
     "process.eyebrow": "Proceso de atención",
     "process.title": "Un proceso simple, claro y profesional.",
     "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",
@@ -86,7 +62,6 @@ const translations = {
   en: {
     "brand.sub": "Property sales and acquisition with personalized attention",
     "nav.about": "About",
-    "nav.focus": "Approach",
     "nav.process": "Process",
     "nav.properties": "Properties",
     "nav.testimonials": "Testimonials",
@@ -113,29 +88,6 @@ const translations = {
     "about.box1.text": "We prioritize direct communication, careful presentation and a more structured service process. Sensitive information is shared at the right stage to protect both the client and the operation.",
     "about.box2.title": "How the process works",
     "about.box2.text": "We first confirm the prospect’s intent, then coordinate the visit, and later share relevant documentation within the process. This helps maintain clarity, security and professionalism.",
-    "focus.eyebrow": "Our approach",
-    "focus.title": "More useful showcase, less noise.",
-    "focus.lead": "The goal of the site is not to overpromise, but to present the right opportunities better and move the conversation to the right channel.",
-    "focus.card1.title": "Visible selection",
-    "focus.card1.text": "We present properties in a cleaner and more careful way without publishing sensitive details too early.",
-    "focus.card2.title": "Real follow-up",
-    "focus.card2.text": "The website is meant to open a useful WhatsApp conversation and continue the process with context, not empty automated replies.",
-    "focus.card3.title": "Ordered growth",
-    "focus.card3.text": "The structure is ready to add more lots, houses, testimonials and digital assets without rebuilding everything from scratch.",
-    "properties.filter.all": "All",
-    "properties.filter.private": "Private",
-    "properties.filter.urban": "Urban",
-    "properties.filter.rustic": "Rustic",
-    "cta.eyebrow": "Next step",
-    "cta.title": "If a property interests you, let’s talk directly.",
-    "cta.text": "A short WhatsApp conversation helps us understand intent, answer initial questions and decide whether it makes sense to move forward with a visit and follow-up.",
-    "cta.primary": "Chat on WhatsApp",
-    "cta.secondary": "Back to properties",
-    "cta.quickInvest": "I want to invest",
-    "cta.quickBuild": "I want to build",
-    "cta.quickVisit": "I want to schedule a visit",
-    "properties.emptyTitle": "There are no properties in this filter yet",
-    "properties.emptyText": "You can switch back to \"All\" or message us on WhatsApp to ask about other available options.",
     "process.eyebrow": "Service process",
     "process.title": "A simple, clear and professional process.",
     "process.lead": "The goal is not to overwhelm the client with information, but to guide them step by step with order, context and trust.",
@@ -200,7 +152,6 @@ let currentGalleryProperty = null;
 let currentLightboxIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
-let activeFilter = "all";
 
 const statusLabels = {
   es: { available: "Disponible", reserved: "En proceso", sold: "Vendido" },
@@ -218,27 +169,6 @@ function applyTranslations() {
     el.textContent = t(key);
   });
 }
-
-function renderQuickIntents() {
-  const container = document.getElementById("cta-quick");
-  if (!container) return;
-  const intents = currentLang === "es"
-    ? [
-        { label: t("cta.quickInvest"), message: "Hola, vi su sitio y me interesa conocer opciones de inversión. [Fuente: CTA rápido]" },
-        { label: t("cta.quickBuild"), message: "Hola, vi su sitio y me interesa un terreno para construir. [Fuente: CTA rápido]" },
-        { label: t("cta.quickVisit"), message: "Hola, vi su sitio y me gustaría agendar una visita. [Fuente: CTA rápido]" }
-      ]
-    : [
-        { label: t("cta.quickInvest"), message: "Hi, I saw your website and I am interested in investment options. [Source: quick CTA]" },
-        { label: t("cta.quickBuild"), message: "Hi, I saw your website and I am interested in land to build on. [Source: quick CTA]" },
-        { label: t("cta.quickVisit"), message: "Hi, I saw your website and I would like to schedule a visit. [Source: quick CTA]" }
-      ];
-
-  container.innerHTML = intents
-    .map((intent) => `<a class="quick-intent" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(intent.message)}">${intent.label}</a>`)
-    .join("");
-}
-
 function renderProcess() {
   const stepsContainer = document.getElementById("steps");
   stepsContainer.innerHTML = "";
@@ -256,34 +186,16 @@ function renderProcess() {
 function renderProperties() {
   const grid = document.getElementById("properties-grid");
   grid.innerHTML = "";
-  const visibleProperties = activeFilter === "all"
-    ? propertyData
-    : propertyData.filter((property) => property.filter === activeFilter);
-
-  if (visibleProperties.length === 0) {
-    grid.innerHTML = `
-      <div class="no-results-card">
-        <div>
-          <h3>${t("properties.emptyTitle")}</h3>
-          <div class="muted">${t("properties.emptyText")}</div>
-        </div>
-      </div>
-    `;
-    return;
-  }
-
-  visibleProperties.forEach((property) => {
+  propertyData.forEach((property) => {
     const title = currentLang === "es" ? property.titleEs : property.titleEn;
     const description = currentLang === "es" ? property.shortEs : property.shortEn;
     const zone = currentLang === "es" ? property.zoneEs : property.zoneEn;
     const badge = currentLang === "es" ? property.badgeEs : property.badgeEn;
     const features = currentLang === "es" ? property.featuresEs : property.featuresEn;
-    const tags = currentLang === "es" ? (property.tagsEs || []) : (property.tagsEn || []);
     const services = property.services.join(" • ");
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
     const article = document.createElement("article");
     article.className = "property-card";
-    article.id = `property-${property.id}`;
     article.innerHTML = `
       <div class="property-image">
         <a class="property-image-link open-gallery" data-id="${property.id}" aria-label="${currentLang === "es" ? "Abrir galería" : "Open gallery"}">
@@ -306,7 +218,6 @@ function renderProperties() {
         </div>
         <div class="muted">${description}</div>
         <div class="features">
-          ${tags.map((tag) => `<span class="feature-pill">${tag}</span>`).join("")}
           ${features.map((feature) => `<span class="feature-pill">${feature}</span>`).join("")}
         </div>
         <div class="property-actions">
@@ -329,31 +240,18 @@ function renderProperties() {
   bindGalleryButtons();
 }
 
-
-function renderPropertyFilters() {
-  const container = document.getElementById("property-filters");
-  if (!container) return;
-  container.innerHTML = "";
-  const filters = ["all", ...Array.from(new Set(propertyData.map((property) => property.filter).filter(Boolean)))];
-  filters.forEach((filterKey) => {
-    const button = document.createElement("button");
-    button.className = "property-filter" + (activeFilter === filterKey ? " active" : "");
-    button.type = "button";
-    button.textContent = t(`properties.filter.${filterKey}`);
-    button.addEventListener("click", () => {
-      activeFilter = filterKey;
-      renderProperties();
-      renderPropertyFilters();
-    });
-    container.appendChild(button);
+function renderPropertyChips() {
+  const chips = document.getElementById("property-chips");
+  if (!chips) return;
+  chips.innerHTML = "";
+  propertyData.forEach((property) => {
+    const chip = document.createElement("div");
+    chip.className = "property-chip";
+    chip.textContent = currentLang === "es" ? property.titleEs : property.titleEn;
+    chips.appendChild(chip);
   });
   const counter = document.getElementById("stat-properties-count");
-  if (counter) {
-    const count = activeFilter === "all"
-      ? propertyData.length
-      : propertyData.filter((property) => property.filter === activeFilter).length;
-    counter.textContent = String(count);
-  }
+  if (counter) counter.textContent = String(propertyData.length);
 }
 
 function renderTestimonials() {
@@ -466,25 +364,13 @@ function bindModal() {
     if (lightboxOpen && event.key === "ArrowRight") showNextImage();
   });
 }
-
-function updateCTA() {
-  const cta = document.getElementById("cta-whatsapp");
-  if (!cta) return;
-  cta.href = makeWhatsAppLink(
-    currentLang === "es"
-      ? "Hola, vi su sitio web y me interesa una de sus propiedades. [Fuente: CTA final]"
-      : "Hi, I saw your website and I am interested in one of your properties. [Source: final CTA]"
-  );
-}
-
 function renderAll() {
   applyTranslations();
   renderProcess();
-  renderPropertyFilters();
   renderProperties();
+  renderPropertyChips();
   renderTestimonials();
   updateHero();
-  updateCTA();
   if (document.getElementById("gallery-modal").classList.contains("active")) {
     closeLightbox();
     closeGallery();

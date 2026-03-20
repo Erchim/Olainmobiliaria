@@ -31,21 +31,8 @@ Cambios principales:
 - Nota de proceso en la sección de propiedades para reforzar confianza y filtrado
 
 
-## Cambios de la versión 7
-- Nueva sección de enfoque de marca para que el sitio se sienta menos plantilla y más negocio real
-- Filtros de propiedades por tipo de oportunidad (Todos / Privado / Urbano / Rústico)
-- CTA final más claro antes del bloque de contacto
-- Mejor estructura para crecer sin perder orden visual
+## Rama estable recomendada
+Esta versión se toma desde la última base que funcionaba correctamente en navegador.
 
-
-## Cambios de la versión 8
-- JSON-LD básico para que el sitio esté mejor preparado para buscadores y perfiles de negocio
-- CTA rápido con 3 intenciones frecuentes: invertir, construir o agendar visita
-- Mejor manejo del caso sin resultados al usar filtros
-- Anclas internas por propiedad para facilitar futuras referencias o enlaces
-- Mejor rastreo del CTA principal hacia WhatsApp
-
-
-## Fix rápido
-- Corregido error de sintaxis en `script.js` por comillas no escapadas en textos de filtros.
-- Validación de sintaxis JS: OK
+### Motivo
+Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de seguir apilando cambios sobre una rama inestable, esta versión queda marcada como base estable para continuar mejoras en pasos más pequeños y verificables.
