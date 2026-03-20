@@ -36,3 +36,25 @@ Esta versión se toma desde la última base que funcionaba correctamente en nave
 
 ### Motivo
 Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de seguir apilando cambios sobre una rama inestable, esta versión queda marcada como base estable para continuar mejoras en pasos más pequeños y verificables.
+
+
+## Cambios de la versión 10
+- Nueva sección “Enfoque / Approach” para que la marca se sienta menos plantilla y más negocio real
+- Chips de propiedades ahora clicables para llevar al usuario directo a la ficha correspondiente
+- IDs internos por inmueble para facilitar navegación y futuras referencias
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 11
+- Nueva sección FAQ con respuestas seguras y útiles para reforzar confianza
+- Enlace FAQ agregado a la navegación superior
+- Nota de contacto más clara sobre idioma y visitas
+- Scroll más limpio hacia secciones y fichas de inmuebles
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 12
+- Botón flotante para volver arriba sin perder el contexto del sitio
+- Preferencia de idioma guardada en `localStorage`
+- Reordenadas las propiedades para priorizar primero los inmuebles urbanos y dejar el rústico después
+- Validación de sintaxis JS: OK

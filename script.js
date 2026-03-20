@@ -8,6 +8,7 @@ const translations = {
     "nav.properties": "Propiedades",
     "nav.testimonials": "Testimonios",
     "nav.contact": "Contacto",
+    "nav.faq": "FAQ",
     "trust.card1.title": "Información cuidada",
     "trust.card1.text": "Compartimos detalles sensibles en la etapa correcta del proceso para proteger al cliente y a la operación.",
     "trust.card2.title": "Visitas con contexto",
@@ -30,6 +31,15 @@ const translations = {
     "about.box1.text": "Priorizamos una comunicación directa, una presentación cuidada y un proceso de atención más ordenado. La información sensible se comparte en la etapa correcta para proteger tanto al cliente como a la operación.",
     "about.box2.title": "Proceso de trabajo",
     "about.box2.text": "Primero calificamos la intención del prospecto, después coordinamos la visita y más adelante compartimos la documentación relevante dentro del proceso. Esto ayuda a mantener claridad, seguridad y seriedad.",
+    "approach.eyebrow": "Enfoque",
+    "approach.title": "Una forma de trabajar más seria, clara y útil para ambas partes.",
+    "approach.lead": "No buscamos saturar al prospecto con datos desde el primer clic. Buscamos ordenar la conversación, entender la intención y avanzar con contexto real.",
+    "approach.card1.title": "Filtrado inicial",
+    "approach.card1.text": "El sitio ayuda a presentar mejor los inmuebles y a iniciar la conversación con personas que realmente tienen interés.",
+    "approach.card2.title": "Información en etapas",
+    "approach.card2.text": "La ubicación exacta, la documentación completa y ciertos detalles sensibles se comparten más adelante dentro del proceso.",
+    "approach.card3.title": "Seguimiento real",
+    "approach.card3.text": "La meta final no es solo mostrar una ficha bonita, sino convertir la visita al sitio en una conversación útil por WhatsApp.",
     "process.eyebrow": "Proceso de atención",
     "process.title": "Un proceso simple, claro y profesional.",
     "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",
@@ -48,6 +58,18 @@ const translations = {
     "contact.primary": "Enviar mensaje",
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Información de contacto",
+    "contact.helper": "Atención inicial en español e inglés. Visitas con cita previa.",
+    "faq.eyebrow": "FAQ",
+    "faq.title": "Preguntas frecuentes antes del primer contacto.",
+    "faq.lead": "Estas respuestas ayudan a que el prospecto llegue con mejor contexto, sin exponer información sensible antes de tiempo.",
+    "faq.card1.title": "¿Comparten ubicación exacta desde el inicio?",
+    "faq.card1.text": "No siempre. Primero buscamos entender la intención del prospecto y después avanzamos con ubicación, visita y contexto completo según el caso.",
+    "faq.card2.title": "¿Se puede agendar una visita?",
+    "faq.card2.text": "Sí. Las visitas se coordinan con cita previa, una vez que existe interés real y una conversación inicial más clara.",
+    "faq.card3.title": "¿Comparten documentos completos en el sitio?",
+    "faq.card3.text": "No. La documentación completa se comparte en etapas posteriores del proceso, para mantener orden, seguridad y seriedad en la operación.",
+    "faq.card4.title": "¿Atienden en más de un idioma?",
+    "faq.card4.text": "Sí. El sitio está preparado en español e inglés para facilitar el primer contacto con compradores locales e internacionales.",
     "contact.item1": "WhatsApp:",
     "contact.item2": "Atención inicial personalizada.",
     "contact.item3": "Información completa en etapas posteriores del proceso.",
@@ -66,6 +88,7 @@ const translations = {
     "nav.properties": "Properties",
     "nav.testimonials": "Testimonials",
     "nav.contact": "Contact",
+    "nav.faq": "FAQ",
     "trust.card1.title": "Protected information",
     "trust.card1.text": "Sensitive details are shared at the right stage of the process to protect both the client and the operation.",
     "trust.card2.title": "Visits with context",
@@ -88,6 +111,15 @@ const translations = {
     "about.box1.text": "We prioritize direct communication, careful presentation and a more structured service process. Sensitive information is shared at the right stage to protect both the client and the operation.",
     "about.box2.title": "How the process works",
     "about.box2.text": "We first confirm the prospect’s intent, then coordinate the visit, and later share relevant documentation within the process. This helps maintain clarity, security and professionalism.",
+    "approach.eyebrow": "Approach",
+    "approach.title": "A more serious, clear and useful way of working for both sides.",
+    "approach.lead": "We do not try to overwhelm the prospect with every detail from the first click. We try to structure the conversation, understand intent and move forward with real context.",
+    "approach.card1.title": "Initial filtering",
+    "approach.card1.text": "The website helps present the properties better and start conversations with people who are genuinely interested.",
+    "approach.card2.title": "Information by stages",
+    "approach.card2.text": "Exact location, full documentation and certain sensitive details are shared later as part of the process.",
+    "approach.card3.title": "Real follow-up",
+    "approach.card3.text": "The final goal is not just to show a nice listing, but to turn the website visit into a useful WhatsApp conversation.",
     "process.eyebrow": "Service process",
     "process.title": "A simple, clear and professional process.",
     "process.lead": "The goal is not to overwhelm the client with information, but to guide them step by step with order, context and trust.",
@@ -106,6 +138,18 @@ const translations = {
     "contact.primary": "Send message",
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Contact information",
+    "contact.helper": "Initial attention in Spanish and English. Visits by appointment.",
+    "faq.eyebrow": "FAQ",
+    "faq.title": "Frequently asked questions before the first contact.",
+    "faq.lead": "These answers help the prospect arrive with better context, without exposing sensitive information too early.",
+    "faq.card1.title": "Do you share the exact location from the start?",
+    "faq.card1.text": "Not always. We first try to understand the prospect’s intent and then move forward with location, visit and full context depending on the case.",
+    "faq.card2.title": "Can I schedule a visit?",
+    "faq.card2.text": "Yes. Visits are scheduled by appointment once there is real interest and a clearer initial conversation.",
+    "faq.card3.title": "Do you share full documents on the website?",
+    "faq.card3.text": "No. Full documentation is shared in later stages of the process to keep the operation organized, secure and serious.",
+    "faq.card4.title": "Do you assist in more than one language?",
+    "faq.card4.text": "Yes. The website is prepared in Spanish and English to make first contact easier for local and international buyers.",
     "contact.item1": "WhatsApp:",
     "contact.item2": "Personalized first contact.",
     "contact.item3": "Full information is shared in later stages of the process.",
@@ -153,6 +197,9 @@ let currentLightboxIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
 
+const savedLanguage = localStorage.getItem("ola_lang");
+if (savedLanguage === "es" || savedLanguage === "en") currentLang = savedLanguage;
+
 const statusLabels = {
   es: { available: "Disponible", reserved: "En proceso", sold: "Vendido" },
   en: { available: "Available", reserved: "In progress", sold: "Sold" }
@@ -196,6 +243,7 @@ function renderProperties() {
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
     const article = document.createElement("article");
     article.className = "property-card";
+    article.id = `property-${property.id}`;
     article.innerHTML = `
       <div class="property-image">
         <a class="property-image-link open-gallery" data-id="${property.id}" aria-label="${currentLang === "es" ? "Abrir galería" : "Open gallery"}">
@@ -245,9 +293,14 @@ function renderPropertyChips() {
   if (!chips) return;
   chips.innerHTML = "";
   propertyData.forEach((property) => {
-    const chip = document.createElement("div");
+    const chip = document.createElement("button");
+    chip.type = "button";
     chip.className = "property-chip";
     chip.textContent = currentLang === "es" ? property.titleEs : property.titleEn;
+    chip.addEventListener("click", () => {
+      const target = document.getElementById(`property-${property.id}`);
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     chips.appendChild(chip);
   });
   const counter = document.getElementById("stat-properties-count");
@@ -288,6 +341,7 @@ function bindLanguageButtons() {
       const lang = button.dataset.lang;
       if (lang === currentLang) return;
       currentLang = lang;
+      localStorage.setItem("ola_lang", currentLang);
       document.querySelectorAll(".lang-btn").forEach((btn) => btn.classList.toggle("active", btn.dataset.lang === currentLang));
       renderAll();
     });
@@ -346,6 +400,29 @@ function bindGalleryThumbs() {
     img.addEventListener("click", () => openLightbox(Number(img.dataset.index)));
   });
 }
+
+function syncLanguageButtons() {
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === currentLang);
+  });
+}
+
+function bindBackToTop() {
+  const btn = document.getElementById("back-to-top");
+  if (!btn) return;
+
+  const toggleVisibility = () => {
+    btn.classList.toggle("visible", window.scrollY > 500);
+  };
+
+  window.addEventListener("scroll", toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 function bindModal() {
   document.getElementById("gallery-close").addEventListener("click", closeGallery);
   document.getElementById("gallery-modal").addEventListener("click", (event) => { if (event.target.id === "gallery-modal") closeGallery(); });
@@ -377,5 +454,7 @@ function renderAll() {
   }
 }
 bindLanguageButtons();
+syncLanguageButtons();
+bindBackToTop();
 bindModal();
 renderAll();

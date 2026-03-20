@@ -27,30 +27,6 @@ const propertyData = [
     ]
   },
   {
-    id: "terreno-huitepec",
-    type: "land",
-    status: "available",
-    area: "674 m²",
-    services: ["Acceso por camino", "Entorno natural"],
-    zoneEs: "Entorno montañoso cerca de la carretera de cuota",
-    zoneEn: "Mountain setting near the toll road",
-    titleEs: "Terreno rústico con vistas y entorno natural",
-    titleEn: "Rustic lot with views and natural surroundings",
-    shortEs: "Propiedad en zona alta con vistas a montañas y bosque, ideal para un proyecto de descanso o vivienda con privacidad.",
-    shortEn: "Property in an elevated area with mountain and forest views, ideal for a retreat or private home project.",
-    featuresEs: ["Vistas abiertas", "Entorno boscoso", "Acceso rápido a la carretera", "Ideal para proyecto residencial"],
-    featuresEn: ["Open views", "Forest surroundings", "Fast road access", "Ideal for residential project"],
-    badgeEs: "Próxima oportunidad",
-    badgeEn: "Opportunity",
-    whatsappEs: "Hola, vi el terreno rústico y quiero conocer más detalles.",
-    whatsappEn: "Hi, I saw the rustic lot and I would like more details.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80"
-    ]
-  },
-  {
     id: "coca-cola-commercial",
     type: "land",
     status: "available",
@@ -73,6 +49,30 @@ const propertyData = [
       "assets/properties/coca-cola-commercial/1.jpg",
       "assets/properties/coca-cola-commercial/2.jpg",
       "assets/properties/coca-cola-commercial/3.jpg"
+    ]
+  },
+  {
+    id: "terreno-huitepec",
+    type: "land",
+    status: "available",
+    area: "674 m²",
+    services: ["Acceso por camino", "Entorno natural"],
+    zoneEs: "Entorno montañoso cerca de la carretera de cuota",
+    zoneEn: "Mountain setting near the toll road",
+    titleEs: "Terreno rústico con vistas y entorno natural",
+    titleEn: "Rustic lot with views and natural surroundings",
+    shortEs: "Propiedad en zona alta con vistas a montañas y bosque, ideal para un proyecto de descanso o vivienda con privacidad.",
+    shortEn: "Property in an elevated area with mountain and forest views, ideal for a retreat or private home project.",
+    featuresEs: ["Vistas abiertas", "Entorno boscoso", "Acceso rápido a la carretera", "Ideal para proyecto residencial"],
+    featuresEn: ["Open views", "Forest surroundings", "Fast road access", "Ideal for residential project"],
+    badgeEs: "Próxima oportunidad",
+    badgeEn: "Opportunity",
+    whatsappEs: "Hola, vi el terreno rústico y quiero conocer más detalles.",
+    whatsappEn: "Hi, I saw the rustic lot and I would like more details.",
+    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80"
     ]
   }
 ];
