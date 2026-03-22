@@ -82,3 +82,9 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Categoría visible por inmueble (urbano / rústico)
 - Highlights cortos dentro de cada ficha para que la lectura sea más útil y más cercana al mundo de lotes/terrenos
 - Validación de sintaxis JS: OK
+
+
+## Fix de la versión 15
+- Corregidas las traducciones faltantes de la banda `landFocus`
+- Añadido fallback más seguro para claves faltantes de traducción
+- Validación de sintaxis JS: OK
