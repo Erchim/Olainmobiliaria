@@ -24,6 +24,7 @@ const translations = {
     "hero.stats.process": "Proceso más claro",
     "hero.stats.contact": "Canal principal de atención",
     "hero.note": "Versión inicial del sitio preparada para crecer con más propiedades, testimonios y contenido institucional sin romper la estructura del proyecto.",
+    "hero.premiumNote": "Una vitrina más clara, discreta y enfocada en prospectos que valoran contexto, confianza y seguimiento serio.",
     "about.eyebrow": "Nosotros",
     "about.title": "Una inmobiliaria en construcción, presentada con orden y seriedad.",
     "about.lead": "OLA Grupo Inmobiliario está construyendo una presencia profesional para presentar oportunidades reales, filtrar mejor a los prospectos y acompañar el proceso con más claridad desde el primer contacto.",
@@ -47,6 +48,13 @@ const translations = {
     "properties.title": "Una base limpia para mostrar oportunidades reales.",
     "properties.lead": "En esta versión del sitio ya mostramos varias propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
     "properties.note": "La ubicación exacta, el precio final y la documentación completa se comparten dentro del proceso de atención con prospectos calificados.",
+    "properties.footerNote": "Si no ves todavía el tipo de propiedad que buscas, el inventario puede ampliarse conforme avance la operación comercial.",
+    "landFocus.card1.title": "Terrenos con mejor lectura",
+    "landFocus.card1.text": "La vitrina prioriza propiedades que se entienden rápido: ubicación general, servicios confirmados y sensación del entorno.",
+    "landFocus.card2.title": "Menos ruido, más contexto",
+    "landFocus.card2.text": "La intención no es subir toda la información posible desde el inicio, sino ordenar mejor el interés real del prospecto.",
+    "landFocus.card3.title": "Compra con acompañamiento",
+    "landFocus.card3.text": "El sitio está pensado como puerta de entrada a una conversación útil, no como sustituto del proceso de atención.",
     "properties.photos": "fotos",
     "gallery.hint": "Toca o haz clic en una foto para verla en tamaño completo.",
     "testimonials.eyebrow": "Confianza",
@@ -59,6 +67,12 @@ const translations = {
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Información de contacto",
     "contact.helper": "Atención inicial en español e inglés. Visitas con cita previa.",
+    "contact.quickGeneral": "Consulta general",
+    "contact.quickInvestment": "Inversión",
+    "contact.quickVisit": "Agendar visita",
+    "contact.signal1": "Atención bilingüe",
+    "contact.signal2": "Visitas con cita",
+    "contact.signal3": "Proceso guiado",
     "faq.eyebrow": "FAQ",
     "faq.title": "Preguntas frecuentes antes del primer contacto.",
     "faq.lead": "Estas respuestas ayudan a que el prospecto llegue con mejor contexto, sin exponer información sensible antes de tiempo.",
@@ -104,6 +118,7 @@ const translations = {
     "hero.stats.process": "Clearer process",
     "hero.stats.contact": "Main contact channel",
     "hero.note": "Initial website version prepared to grow with more properties, testimonials and institutional content without breaking the project structure.",
+    "hero.premiumNote": "A clearer, more discreet showcase focused on prospects who value context, trust and serious follow-up.",
     "about.eyebrow": "About",
     "about.title": "A real estate brand in the making, presented with structure and seriousness.",
     "about.lead": "OLA Grupo Inmobiliario is building a professional presence to present real opportunities, filter prospects better and guide the process with more clarity from the first contact.",
@@ -127,6 +142,13 @@ const translations = {
     "properties.title": "A clean base for presenting real opportunities.",
     "properties.lead": "This website version already shows several properties and keeps the structure ready to add more land or homes in the future.",
     "properties.note": "Exact location, final price and full documentation are shared during the service process with qualified prospects.",
+    "properties.footerNote": "If you do not yet see the type of property you are looking for, the inventory can grow as the commercial operation expands.",
+    "landFocus.card1.title": "Land with stronger readability",
+    "landFocus.card1.text": "The showcase prioritizes properties that are easy to understand: general location, confirmed services and a clear sense of the surroundings.",
+    "landFocus.card2.title": "Less noise, more context",
+    "landFocus.card2.text": "The intention is not to upload every possible detail from the beginning, but to better organize genuine prospect interest.",
+    "landFocus.card3.title": "Guided purchase path",
+    "landFocus.card3.text": "The website is designed as the entry point to a useful conversation, not as a replacement for the service process.",
     "properties.photos": "photos",
     "gallery.hint": "Tap or click on a photo to view it full size.",
     "testimonials.eyebrow": "Trust",
@@ -139,6 +161,12 @@ const translations = {
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Contact information",
     "contact.helper": "Initial attention in Spanish and English. Visits by appointment.",
+    "contact.quickGeneral": "General inquiry",
+    "contact.quickInvestment": "Investment",
+    "contact.quickVisit": "Schedule a visit",
+    "contact.signal1": "Bilingual attention",
+    "contact.signal2": "Visits by appointment",
+    "contact.signal3": "Guided process",
     "faq.eyebrow": "FAQ",
     "faq.title": "Frequently asked questions before the first contact.",
     "faq.lead": "These answers help the prospect arrive with better context, without exposing sensitive information too early.",
@@ -180,14 +208,32 @@ const processSteps = {
 
 const testimonials = {
   es: [
-    { quote: "Espacio reservado para una futura reseña de comprador. Aquí se podrá mostrar una experiencia real de atención y acompañamiento.", author: "Cliente verificado — próximamente" },
-    { quote: "Este bloque también puede utilizarse para reforzar credibilidad institucional, trato personalizado o confianza durante el proceso.", author: "Testimonio institucional — próximamente" },
-    { quote: "Más adelante se pueden agregar citas breves, videos, reseñas capturadas o evidencia social mejor estructurada.", author: "Caso real — próximamente" }
+    {
+      quote: "Este espacio queda preparado para testimonios verificados, casos reales de compra y referencias de clientes conforme la operación siga creciendo.",
+      author: "Sección en preparación"
+    },
+    {
+      quote: "Mientras tanto, el sitio prioriza claridad, atención directa por WhatsApp y un proceso más ordenado para filtrar mejor el interés real.",
+      author: "Enfoque actual"
+    },
+    {
+      quote: "La meta es que esta vitrina se llene con evidencia real de servicio y acompañamiento, no con frases genéricas que no aportan confianza.",
+      author: "Próximo paso"
+    }
   ],
   en: [
-    { quote: "Reserved space for a future buyer review. A real experience of service and guidance can be displayed here.", author: "Verified client — coming soon" },
-    { quote: "This block can also reinforce institutional credibility, personalized service and confidence throughout the process.", author: "Institutional testimonial — coming soon" },
-    { quote: "Later we can add short quotes, videos, captured reviews or more structured social proof.", author: "Real case — coming soon" }
+    {
+      quote: "This space is prepared for verified testimonials, real purchase cases and client references as the operation continues to grow.",
+      author: "Section in preparation"
+    },
+    {
+      quote: "In the meantime, the website prioritizes clarity, direct WhatsApp attention and a more organized process to filter genuine interest.",
+      author: "Current focus"
+    },
+    {
+      quote: "The goal is for this showcase to be filled with real proof of service and guidance, not with generic phrases that do not build trust.",
+      author: "Next step"
+    }
   ]
 };
 
@@ -216,6 +262,38 @@ function applyTranslations() {
     el.textContent = t(key);
   });
 }
+
+function renderContactQuick() {
+  const container = document.getElementById("contact-quick");
+  if (!container) return;
+
+  const intents = currentLang === "es"
+    ? [
+        { label: t("contact.quickGeneral"), message: "Hola, vi su sitio y me gustaría recibir información general. [Fuente: contacto rápido]" },
+        { label: t("contact.quickInvestment"), message: "Hola, vi su sitio y me interesan opciones para inversión. [Fuente: contacto rápido]" },
+        { label: t("contact.quickVisit"), message: "Hola, vi su sitio y me gustaría agendar una visita. [Fuente: contacto rápido]" }
+      ]
+    : [
+        { label: t("contact.quickGeneral"), message: "Hi, I saw your website and I would like general information. [Source: quick contact]" },
+        { label: t("contact.quickInvestment"), message: "Hi, I saw your website and I am interested in investment options. [Source: quick contact]" },
+        { label: t("contact.quickVisit"), message: "Hi, I saw your website and I would like to schedule a visit. [Source: quick contact]" }
+      ];
+
+  container.innerHTML = intents
+    .map((intent) => `<a class="contact-quick-btn" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(intent.message)}">${intent.label}</a>`)
+    .join("");
+}
+
+
+function renderServiceSignals() {
+  const container = document.getElementById("service-signals");
+  if (!container) return;
+  const labels = [t("contact.signal1"), t("contact.signal2"), t("contact.signal3")];
+  container.innerHTML = labels
+    .map((label) => `<div class="service-signal">${label}</div>`)
+    .join("");
+}
+
 function renderProcess() {
   const stepsContainer = document.getElementById("steps");
   stepsContainer.innerHTML = "";
@@ -276,15 +354,6 @@ function renderProperties() {
     `;
     grid.appendChild(article);
   });
-  const emptyCard = document.createElement("div");
-  emptyCard.className = "empty-card";
-  emptyCard.innerHTML = `
-    <div>
-      <h3>${currentLang === "es" ? "Espacio preparado para nuevas propiedades" : "Space ready for new properties"}</h3>
-      <div class="muted">${currentLang === "es" ? "La estructura del sitio ya está lista para agregar más terrenos o casas más adelante sin rehacer el diseño completo." : "The site structure is already prepared to add more lots or houses later without rebuilding the full design."}</div>
-    </div>
-  `;
-  grid.appendChild(emptyCard);
   bindGalleryButtons();
 }
 
@@ -314,9 +383,9 @@ function renderTestimonials() {
     const article = document.createElement("article");
     article.className = "testimonial-card";
     article.innerHTML = `
-      <div class="eyebrow">${currentLang === "es" ? "Próximamente" : "Coming soon"}</div>
+      <div class="eyebrow">${currentLang === "es" ? "Confianza en construcción" : "Trust in progress"}</div>
       <div class="testimonial-text">${item.quote}</div>
-      <div class="testimonial-author">${item.author}</div>
+      <div class="testimonial-author subtle">${item.author}</div>
     `;
     grid.appendChild(article);
   });
@@ -446,6 +515,8 @@ function renderAll() {
   renderProcess();
   renderProperties();
   renderPropertyChips();
+  renderContactQuick();
+  renderServiceSignals();
   renderTestimonials();
   updateHero();
   if (document.getElementById("gallery-modal").classList.contains("active")) {

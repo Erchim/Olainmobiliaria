@@ -58,3 +58,27 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Preferencia de idioma guardada en `localStorage`
 - Reordenadas las propiedades para priorizar primero los inmuebles urbanos y dejar el rústico después
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 13
+- FAQ visible también desde la navegación superior
+- JSON-LD básico restaurado para reforzar preparación del sitio frente a buscadores y perfiles de negocio
+- Acciones rápidas en contacto: consulta general, inversión y visita
+- Eliminada la tarjeta “placeholder” de futuras propiedades para que la vitrina se sienta más seria
+- Nota discreta bajo propiedades en lugar de una tarjeta de relleno
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 14
+- Testimonios reemplazados por una versión más honesta y menos “demo”
+- Señales de servicio agregadas al bloque de contacto: bilingüe, visitas con cita y proceso guiado
+- Ajustes para que la percepción del sitio sea más cercana a una vitrina seria y menos a un template
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 15
+- Hero con una nota más premium y menos genérica
+- Banda “land-first” antes de las propiedades para reforzar la lógica de vitrina de terrenos
+- Categoría visible por inmueble (urbano / rústico)
+- Highlights cortos dentro de cada ficha para que la lectura sea más útil y más cercana al mundo de lotes/terrenos
+- Validación de sintaxis JS: OK
