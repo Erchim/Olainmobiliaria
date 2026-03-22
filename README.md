@@ -88,3 +88,26 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Corregidas las traducciones faltantes de la banda `landFocus`
 - Añadido fallback más seguro para claves faltantes de traducción
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 16
+- Iteración pequeña y segura centrada en textos
+- Hero y bloque “Nosotros” con tono más claro, más serio y menos genérico
+- Ajustes leves en enfoque, proceso y contacto para que la conversación se sienta más profesional
+- Pulido menor de legibilidad en párrafos
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 17
+- Paso pequeño enfocado en simplificar el camino de contacto
+- Eliminadas las acciones rápidas redundantes dentro del bloque de contacto
+- Hero y contacto con texto ligeramente más claro y más directo
+- Se mantiene la señalización útil (bilingüe, visitas con cita, proceso guiado) pero con menos ruido visual
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 18
+- Jerarquía visual más clara entre inmuebles
+- Primer terreno destacado como oportunidad principal
+- Etiquetas discretas para distinguir opción principal, urbana y alternativa
+- Validación de sintaxis JS: OK

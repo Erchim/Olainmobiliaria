@@ -16,24 +16,24 @@ const translations = {
     "trust.card3.title": "Atención directa",
     "trust.card3.text": "El sitio funciona como vitrina de confianza y como entrada a una conversación real por WhatsApp.",
     "hero.eyebrow": "Presentación profesional y atención directa",
-    "hero.title": "Propiedades seleccionadas con una experiencia clara y confiable.",
-    "hero.text": "OLA Grupo Inmobiliario funciona como una vitrina seria y elegante para presentar oportunidades, generar confianza y acompañar a cada prospecto con un proceso más ordenado y seguro.",
+    "hero.title": "Terrenos y oportunidades presentados con más claridad, contexto y seriedad.",
+    "hero.text": "OLA Grupo Inmobiliario está construyendo una vitrina clara para presentar terrenos y oportunidades con mejor contexto, mejor filtro inicial y una conversación más seria desde el primer contacto.",
     "hero.primary": "Escribir por WhatsApp",
-    "hero.secondary": "Ver propiedades",
+    "hero.secondary": "Explorar terrenos",
     "hero.stats.properties": "Propiedades destacadas",
     "hero.stats.process": "Proceso más claro",
     "hero.stats.contact": "Canal principal de atención",
     "hero.note": "Versión inicial del sitio preparada para crecer con más propiedades, testimonios y contenido institucional sin romper la estructura del proyecto.",
     "hero.premiumNote": "Una vitrina más clara, discreta y enfocada en prospectos que valoran contexto, confianza y seguimiento serio.",
     "about.eyebrow": "Nosotros",
-    "about.title": "Una inmobiliaria en construcción, presentada con orden y seriedad.",
-    "about.lead": "OLA Grupo Inmobiliario está construyendo una presencia profesional para presentar oportunidades reales, filtrar mejor a los prospectos y acompañar el proceso con más claridad desde el primer contacto.",
+    "about.title": "Una presentación más clara para terrenos, oportunidades y atención guiada.",
+    "about.lead": "El objetivo del sitio no es prometer demasiado, sino mostrar oportunidades reales con una estructura clara, una imagen más profesional y un proceso de atención que ayude a filtrar mejor el interés real.",
     "about.box1.title": "Por qué elegir OLA",
-    "about.box1.text": "Priorizamos una comunicación directa, una presentación cuidada y un proceso de atención más ordenado. La información sensible se comparte en la etapa correcta para proteger tanto al cliente como a la operación.",
+    "about.box1.text": "Priorizamos una comunicación directa, una presentación cuidada de cada terreno y una forma de trabajo más ordenada. La información sensible se comparte en la etapa correcta para proteger tanto al cliente como a la operación.",
     "about.box2.title": "Proceso de trabajo",
-    "about.box2.text": "Primero calificamos la intención del prospecto, después coordinamos la visita y más adelante compartimos la documentación relevante dentro del proceso. Esto ayuda a mantener claridad, seguridad y seriedad.",
+    "about.box2.text": "Primero entendemos qué busca el prospecto, después coordinamos la visita y más adelante compartimos la documentación relevante dentro del proceso. Esto ayuda a mantener claridad, seguridad y una experiencia más seria para ambas partes.",
     "approach.eyebrow": "Enfoque",
-    "approach.title": "Una forma de trabajar más seria, clara y útil para ambas partes.",
+    "approach.title": "Una forma de trabajar más clara, más útil y más seria para ambas partes.",
     "approach.lead": "No buscamos saturar al prospecto con datos desde el primer clic. Buscamos ordenar la conversación, entender la intención y avanzar con contexto real.",
     "approach.card1.title": "Filtrado inicial",
     "approach.card1.text": "El sitio ayuda a presentar mejor los inmuebles y a iniciar la conversación con personas que realmente tienen interés.",
@@ -43,12 +43,15 @@ const translations = {
     "approach.card3.text": "La meta final no es solo mostrar una ficha bonita, sino convertir la visita al sitio en una conversación útil por WhatsApp.",
     "process.eyebrow": "Proceso de atención",
     "process.title": "Un proceso simple, claro y profesional.",
-    "process.lead": "La meta no es saturar al cliente con información, sino acompañarlo paso a paso con orden, contexto y confianza.",
+    "process.lead": "La meta no es saturar al cliente con información desde el inicio, sino acompañarlo paso a paso con orden, contexto y confianza.",
     "properties.eyebrow": "Propiedades destacadas",
     "properties.title": "Una base limpia para mostrar oportunidades reales.",
     "properties.lead": "En esta versión del sitio ya mostramos varias propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
     "properties.note": "La ubicación exacta, el precio final y la documentación completa se comparten dentro del proceso de atención con prospectos calificados.",
     "properties.footerNote": "Si no ves todavía el tipo de propiedad que buscas, el inventario puede ampliarse conforme avance la operación comercial.",
+    "properties.tierFeatured": "Oportunidad principal",
+    "properties.tierUrban": "Opción urbana",
+    "properties.tierAlternative": "Opción alternativa",
     "landFocus.card1.title": "Terrenos con mejor lectura",
     "landFocus.card1.text": "La vitrina prioriza propiedades que se entienden rápido: ubicación general, servicios confirmados y sensación del entorno.",
     "landFocus.card2.title": "Menos ruido, más contexto",
@@ -61,16 +64,13 @@ const translations = {
     "testimonials.title": "Espacio listo para testimonios reales.",
     "testimonials.lead": "Por ahora este bloque funciona como placeholder elegante. Más adelante se puede reemplazar con reseñas reales, casos de compra o experiencias verificadas.",
     "contact.eyebrow": "Contacto",
-    "contact.title": "Hablemos por WhatsApp.",
-    "contact.lead": "Si una propiedad te interesa, el primer paso es escribirnos. Así podemos entender mejor tu intención, resolver dudas iniciales y orientarte en el siguiente paso.",
+    "contact.title": "Hablemos y coordinemos el siguiente paso.",
+    "contact.lead": "Si una propiedad te interesa, el primer paso es escribirnos por WhatsApp. Así podemos entender mejor tu intención, resolver dudas iniciales y orientarte con más claridad en el siguiente paso.",
     "contact.primary": "Enviar mensaje",
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Información de contacto",
-    "contact.helper": "Atención inicial en español e inglés. Visitas con cita previa.",
-    "contact.quickGeneral": "Consulta general",
-    "contact.quickInvestment": "Inversión",
-    "contact.quickVisit": "Agendar visita",
-    "contact.signal1": "Atención bilingüe",
+    "contact.helper": "Atención inicial en español e inglés. Visitas con cita previa y seguimiento directo por WhatsApp.",
+                "contact.signal1": "Atención bilingüe",
     "contact.signal2": "Visitas con cita",
     "contact.signal3": "Proceso guiado",
     "faq.eyebrow": "FAQ",
@@ -110,24 +110,24 @@ const translations = {
     "trust.card3.title": "Direct attention",
     "trust.card3.text": "The website works as a trust showcase and as the entry point to a real WhatsApp conversation.",
     "hero.eyebrow": "Professional presentation and direct attention",
-    "hero.title": "Selected properties with a clear and trustworthy experience.",
-    "hero.text": "OLA Grupo Inmobiliario is designed as a serious and elegant showcase for opportunities, helping build trust and guiding each prospect through a more organized and secure process.",
+    "hero.title": "Land and opportunities presented with more clarity, context and seriousness.",
+    "hero.text": "OLA Grupo Inmobiliario is building a clearer showcase to present land and opportunities with better context, better initial filtering and a more serious conversation from the first contact.",
     "hero.primary": "Message on WhatsApp",
-    "hero.secondary": "View properties",
+    "hero.secondary": "Explore land",
     "hero.stats.properties": "Featured properties",
     "hero.stats.process": "Clearer process",
     "hero.stats.contact": "Main contact channel",
     "hero.note": "Initial website version prepared to grow with more properties, testimonials and institutional content without breaking the project structure.",
     "hero.premiumNote": "A clearer, more discreet showcase focused on prospects who value context, trust and serious follow-up.",
     "about.eyebrow": "About",
-    "about.title": "A real estate brand in the making, presented with structure and seriousness.",
-    "about.lead": "OLA Grupo Inmobiliario is building a professional presence to present real opportunities, filter prospects better and guide the process with more clarity from the first contact.",
+    "about.title": "A clearer presentation for land, opportunities and guided attention.",
+    "about.lead": "The goal of the website is not to overpromise, but to present real opportunities with a clearer structure, a more professional image and a service flow that helps filter genuine interest.",
     "about.box1.title": "Why choose OLA",
-    "about.box1.text": "We prioritize direct communication, careful presentation and a more structured service process. Sensitive information is shared at the right stage to protect both the client and the operation.",
+    "about.box1.text": "We prioritize direct communication, careful presentation of each lot and a more structured way of working. Sensitive information is shared at the right stage to protect both the client and the operation.",
     "about.box2.title": "How the process works",
-    "about.box2.text": "We first confirm the prospect’s intent, then coordinate the visit, and later share relevant documentation within the process. This helps maintain clarity, security and professionalism.",
+    "about.box2.text": "We first understand what the prospect is looking for, then coordinate the visit, and later share relevant documentation within the process. This helps maintain clarity, security and a more serious experience for both sides.",
     "approach.eyebrow": "Approach",
-    "approach.title": "A more serious, clear and useful way of working for both sides.",
+    "approach.title": "A clearer, more useful and more serious way of working for both sides.",
     "approach.lead": "We do not try to overwhelm the prospect with every detail from the first click. We try to structure the conversation, understand intent and move forward with real context.",
     "approach.card1.title": "Initial filtering",
     "approach.card1.text": "The website helps present the properties better and start conversations with people who are genuinely interested.",
@@ -137,12 +137,15 @@ const translations = {
     "approach.card3.text": "The final goal is not just to show a nice listing, but to turn the website visit into a useful WhatsApp conversation.",
     "process.eyebrow": "Service process",
     "process.title": "A simple, clear and professional process.",
-    "process.lead": "The goal is not to overwhelm the client with information, but to guide them step by step with order, context and trust.",
+    "process.lead": "The goal is not to overwhelm the client with information from the beginning, but to guide them step by step with order, context and trust.",
     "properties.eyebrow": "Featured properties",
     "properties.title": "A clean base for presenting real opportunities.",
     "properties.lead": "This website version already shows several properties and keeps the structure ready to add more land or homes in the future.",
     "properties.note": "Exact location, final price and full documentation are shared during the service process with qualified prospects.",
     "properties.footerNote": "If you do not yet see the type of property you are looking for, the inventory can grow as the commercial operation expands.",
+    "properties.tierFeatured": "Main opportunity",
+    "properties.tierUrban": "Urban option",
+    "properties.tierAlternative": "Alternative option",
     "landFocus.card1.title": "Land with stronger readability",
     "landFocus.card1.text": "The showcase prioritizes properties that are easy to understand: general location, confirmed services and a clear sense of the surroundings.",
     "landFocus.card2.title": "Less noise, more context",
@@ -155,16 +158,13 @@ const translations = {
     "testimonials.title": "A section ready for real testimonials.",
     "testimonials.lead": "For now this block works as an elegant placeholder. Later it can be replaced with real reviews, purchase stories or verified client experiences.",
     "contact.eyebrow": "Contact",
-    "contact.title": "Let’s talk on WhatsApp.",
-    "contact.lead": "If a property interests you, the first step is to message us. That helps us understand your intent, answer initial questions and guide you to the next stage.",
+    "contact.title": "Let’s talk and coordinate the next step.",
+    "contact.lead": "If a property interests you, the first step is to message us on WhatsApp. That helps us understand your intent, answer initial questions and guide you more clearly to the next stage.",
     "contact.primary": "Send message",
     "contact.secondary": "Instagram",
     "contact.cardTitle": "Contact information",
-    "contact.helper": "Initial attention in Spanish and English. Visits by appointment.",
-    "contact.quickGeneral": "General inquiry",
-    "contact.quickInvestment": "Investment",
-    "contact.quickVisit": "Schedule a visit",
-    "contact.signal1": "Bilingual attention",
+    "contact.helper": "Initial attention in Spanish and English. Visits by appointment and direct WhatsApp follow-up.",
+                "contact.signal1": "Bilingual attention",
     "contact.signal2": "Visits by appointment",
     "contact.signal3": "Guided process",
     "faq.eyebrow": "FAQ",
@@ -263,27 +263,6 @@ function applyTranslations() {
   });
 }
 
-function renderContactQuick() {
-  const container = document.getElementById("contact-quick");
-  if (!container) return;
-
-  const intents = currentLang === "es"
-    ? [
-        { label: t("contact.quickGeneral"), message: "Hola, vi su sitio y me gustaría recibir información general. [Fuente: contacto rápido]" },
-        { label: t("contact.quickInvestment"), message: "Hola, vi su sitio y me interesan opciones para inversión. [Fuente: contacto rápido]" },
-        { label: t("contact.quickVisit"), message: "Hola, vi su sitio y me gustaría agendar una visita. [Fuente: contacto rápido]" }
-      ]
-    : [
-        { label: t("contact.quickGeneral"), message: "Hi, I saw your website and I would like general information. [Source: quick contact]" },
-        { label: t("contact.quickInvestment"), message: "Hi, I saw your website and I am interested in investment options. [Source: quick contact]" },
-        { label: t("contact.quickVisit"), message: "Hi, I saw your website and I would like to schedule a visit. [Source: quick contact]" }
-      ];
-
-  container.innerHTML = intents
-    .map((intent) => `<a class="contact-quick-btn" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(intent.message)}">${intent.label}</a>`)
-    .join("");
-}
-
 
 function renderServiceSignals() {
   const container = document.getElementById("service-signals");
@@ -320,7 +299,8 @@ function renderProperties() {
     const services = property.services.join(" • ");
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
     const article = document.createElement("article");
-    article.className = "property-card";
+    const isFeatured = index === 0;
+    article.className = isFeatured ? "property-card featured-card" : "property-card";
     article.id = `property-${property.id}`;
     article.innerHTML = `
       <div class="property-image">
@@ -515,7 +495,6 @@ function renderAll() {
   renderProcess();
   renderProperties();
   renderPropertyChips();
-  renderContactQuick();
   renderServiceSignals();
   renderTestimonials();
   updateHero();
