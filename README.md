@@ -111,3 +111,10 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Primer terreno destacado como oportunidad principal
 - Etiquetas discretas para distinguir opción principal, urbana y alternativa
 - Validación de sintaxis JS: OK
+
+
+## Fix de la versión 18
+- Corregido `renderProperties` para usar `index` correctamente
+- Restaurada la jerarquía visual de inmuebles sin romper el render
+- Habilitadas de forma segura las etiquetas de jerarquía, categoría y highlights
+- Validación de sintaxis JS: OK

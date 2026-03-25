@@ -290,7 +290,7 @@ function renderProcess() {
 function renderProperties() {
   const grid = document.getElementById("properties-grid");
   grid.innerHTML = "";
-  propertyData.forEach((property) => {
+  propertyData.forEach((property, index) => {
     const title = currentLang === "es" ? property.titleEs : property.titleEn;
     const description = currentLang === "es" ? property.shortEs : property.shortEn;
     const zone = currentLang === "es" ? property.zoneEs : property.zoneEn;
@@ -300,6 +300,12 @@ function renderProperties() {
     const message = currentLang === "es" ? property.whatsappEs : property.whatsappEn;
     const article = document.createElement("article");
     const isFeatured = index === 0;
+    const tierLabel = index === 0
+      ? t("properties.tierFeatured")
+      : index === 1
+        ? t("properties.tierUrban")
+        : t("properties.tierAlternative");
+    const tierClass = index === 0 ? "property-tier tier-featured" : "property-tier";
     article.className = isFeatured ? "property-card featured-card" : "property-card";
     article.id = `property-${property.id}`;
     article.innerHTML = `
@@ -312,10 +318,14 @@ function renderProperties() {
         <div class="photo-count">${property.gallery.length} ${t("properties.photos")}</div>
       </div>
       <div class="property-body">
+        <div class="${tierClass}">${tierLabel}</div>
         <div class="property-top">
           <div>
             <div class="property-title">${title}</div>
-            <div class="property-subtitle">${zone}</div>
+            <div class="property-subtitle">
+              <span>${zone}</span>
+              <span class="property-category">${currentLang === "es" ? property.categoryEs : property.categoryEn}</span>
+            </div>
           </div>
         </div>
         <div class="property-meta">
@@ -323,6 +333,9 @@ function renderProperties() {
           <span class="meta-pill">${services}</span>
         </div>
         <div class="muted">${description}</div>
+        <div class="property-highlights">
+          ${((currentLang === "es" ? property.highlightsEs : property.highlightsEn) || []).map((item) => `<div class="property-highlight">• ${item}</div>`).join("")}
+        </div>
         <div class="features">
           ${features.map((feature) => `<span class="feature-pill">${feature}</span>`).join("")}
         </div>
