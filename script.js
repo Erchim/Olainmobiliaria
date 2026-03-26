@@ -16,15 +16,18 @@ const translations = {
     "trust.card3.title": "Atención directa",
     "trust.card3.text": "El sitio funciona como vitrina de confianza y como entrada a una conversación real por WhatsApp.",
     "hero.eyebrow": "Presentación profesional y atención directa",
-    "hero.title": "Terrenos y oportunidades presentados con más claridad, contexto y seriedad.",
-    "hero.text": "OLA Grupo Inmobiliario está construyendo una vitrina clara para presentar terrenos y oportunidades con mejor contexto, mejor filtro inicial y una conversación más seria desde el primer contacto.",
-    "hero.primary": "Escribir por WhatsApp",
-    "hero.secondary": "Explorar terrenos",
+    "hero.title": "Terrenos en San Cristóbal presentados con más claridad, contexto y seriedad.",
+    "hero.text": "Este sitio funciona como una vitrina clara para presentar terrenos en San Cristóbal con mejor contexto, mejor filtro inicial y un camino más directo hacia la conversación por WhatsApp.",
+    "hero.primary": "Solicitar información",
+    "hero.secondary": "Ver terreno principal",
     "hero.stats.properties": "Propiedades destacadas",
     "hero.stats.process": "Proceso más claro",
     "hero.stats.contact": "Canal principal de atención",
     "hero.note": "Versión inicial del sitio preparada para crecer con más propiedades, testimonios y contenido institucional sin romper la estructura del proyecto.",
-    "hero.premiumNote": "Una vitrina más clara, discreta y enfocada en prospectos que valoran contexto, confianza y seguimiento serio.",
+    "hero.factArea": "Superficie",
+    "hero.factZone": "Zona",
+    "hero.factServices": "Servicios",
+    "hero.premiumNote": "Primer objetivo del sitio: convertir visitas de publicidad en conversaciones útiles, con mejor contexto y menos fricción.",
     "about.eyebrow": "Nosotros",
     "about.title": "Una presentación más clara para terrenos, oportunidades y atención guiada.",
     "about.lead": "El objetivo del sitio no es prometer demasiado, sino mostrar oportunidades reales con una estructura clara, una imagen más profesional y un proceso de atención que ayude a filtrar mejor el interés real.",
@@ -110,15 +113,18 @@ const translations = {
     "trust.card3.title": "Direct attention",
     "trust.card3.text": "The website works as a trust showcase and as the entry point to a real WhatsApp conversation.",
     "hero.eyebrow": "Professional presentation and direct attention",
-    "hero.title": "Land and opportunities presented with more clarity, context and seriousness.",
-    "hero.text": "OLA Grupo Inmobiliario is building a clearer showcase to present land and opportunities with better context, better initial filtering and a more serious conversation from the first contact.",
-    "hero.primary": "Message on WhatsApp",
-    "hero.secondary": "Explore land",
+    "hero.title": "Land in San Cristóbal presented with more clarity, context and seriousness.",
+    "hero.text": "This website works as a clearer showcase to present land in San Cristóbal with better context, better initial filtering and a more direct path to a WhatsApp conversation.",
+    "hero.primary": "Request information",
+    "hero.secondary": "View featured lot",
     "hero.stats.properties": "Featured properties",
     "hero.stats.process": "Clearer process",
     "hero.stats.contact": "Main contact channel",
     "hero.note": "Initial website version prepared to grow with more properties, testimonials and institutional content without breaking the project structure.",
-    "hero.premiumNote": "A clearer, more discreet showcase focused on prospects who value context, trust and serious follow-up.",
+    "hero.factArea": "Area",
+    "hero.factZone": "Zone",
+    "hero.factServices": "Services",
+    "hero.premiumNote": "The first goal of the site is to turn ad traffic into useful conversations, with better context and less friction.",
     "about.eyebrow": "About",
     "about.title": "A clearer presentation for land, opportunities and guided attention.",
     "about.lead": "The goal of the website is not to overpromise, but to present real opportunities with a clearer structure, a more professional image and a service flow that helps filter genuine interest.",
@@ -273,6 +279,26 @@ function renderServiceSignals() {
     .join("");
 }
 
+
+function renderHeroFacts() {
+  const container = document.getElementById("hero-facts");
+  if (!container || !propertyData.length) return;
+
+  const property = propertyData[0];
+  const zone = currentLang === "es" ? property.zoneEs : property.zoneEn;
+  const services = property.services.join(" • ");
+
+  const facts = [
+    { label: t("hero.factArea"), value: property.area },
+    { label: t("hero.factZone"), value: zone },
+    { label: t("hero.factServices"), value: services }
+  ];
+
+  container.innerHTML = facts
+    .map((fact) => `<div class="hero-fact"><strong>${fact.label}:</strong> <span>${fact.value}</span></div>`)
+    .join("");
+}
+
 function renderProcess() {
   const stepsContainer = document.getElementById("steps");
   stepsContainer.innerHTML = "";
@@ -389,6 +415,8 @@ function updateHero() {
   document.getElementById("hero-image").alt = currentLang === "es" ? firstProperty.titleEs : firstProperty.titleEn;
   document.getElementById("hero-overlay-title").textContent = currentLang === "es" ? firstProperty.titleEs : firstProperty.titleEn;
   document.getElementById("hero-overlay-text").textContent = currentLang === "es" ? firstProperty.shortEs : firstProperty.shortEn;
+  const heroSecondary = document.getElementById("hero-secondary");
+  if (heroSecondary) heroSecondary.href = `#property-${firstProperty.id}`;
   document.getElementById("hero-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi el sitio de OLA Grupo Inmobiliario y quiero más información." : "Hi, I saw the OLA Grupo Inmobiliario website and I would like more information.");
   document.getElementById("contact-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, quiero recibir información sobre sus propiedades." : "Hi, I would like to receive information about your properties.");
   const floating = document.getElementById("floating-whatsapp");
@@ -505,6 +533,7 @@ function bindModal() {
 }
 function renderAll() {
   applyTranslations();
+  renderHeroFacts();
   renderProcess();
   renderProperties();
   renderPropertyChips();

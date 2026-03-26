@@ -118,3 +118,11 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Restaurada la jerarquía visual de inmuebles sin romper el render
 - Habilitadas de forma segura las etiquetas de jerarquía, categoría y highlights
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 19
+- Paso 1 del enfoque “landing como selling gateway”
+- Primer pantalla más específica: terrenos en San Cristóbal, CTA más claro y menos genérico
+- Datos rápidos del inmueble principal añadidos en el hero (superficie, zona y servicios)
+- CTA secundario del hero ahora lleva directo al terreno principal
+- Validación de sintaxis JS: OK
