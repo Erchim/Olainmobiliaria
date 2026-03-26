@@ -9,6 +9,7 @@ const translations = {
     "nav.testimonials": "Testimonios",
     "nav.contact": "Contacto",
     "nav.faq": "FAQ",
+    "nav.faq": "FAQ",
     "trust.card1.title": "Información cuidada",
     "trust.card1.text": "Compartimos detalles sensibles en la etapa correcta del proceso para proteger al cliente y a la operación.",
     "trust.card2.title": "Visitas con contexto",
@@ -52,6 +53,11 @@ const translations = {
     "properties.lead": "En esta versión del sitio ya mostramos varias propiedades y dejamos la estructura lista para agregar más terrenos o casas en el futuro.",
     "properties.note": "La ubicación exacta, el precio final y la documentación completa se comparten dentro del proceso de atención con prospectos calificados.",
     "properties.footerNote": "Si no ves todavía el tipo de propiedad que buscas, el inventario puede ampliarse conforme avance la operación comercial.",
+    "properties.marketArea": "Superficie",
+    "properties.marketZone": "Zona general",
+    "properties.marketPrice": "Precio",
+    "properties.priceOnRequest": "Por solicitud",
+    "properties.ctaDetails": "Solicitar precio y detalles",
     "properties.tierFeatured": "Oportunidad principal",
     "properties.tierUrban": "Opción urbana",
     "properties.tierAlternative": "Opción alternativa",
@@ -68,9 +74,19 @@ const translations = {
     "testimonials.lead": "Por ahora este bloque funciona como placeholder elegante. Más adelante se puede reemplazar con reseñas reales, casos de compra o experiencias verificadas.",
     "contact.eyebrow": "Contacto",
     "contact.title": "Hablemos y coordinemos el siguiente paso.",
+    "clarity.eyebrow": "Claridad y seguridad",
+    "clarity.title": "Antes de compartir más detalles, ordenamos bien la conversación.",
+    "clarity.lead": "Este sitio no está pensado para exponer todo de inmediato, sino para que el prospecto llegue mejor orientado y el siguiente paso tenga más contexto.",
+    "clarity.card1.title": "Ubicación y datos sensibles",
+    "clarity.card1.text": "La ubicación exacta y ciertos detalles se comparten dentro del proceso, una vez que existe interés real y conversación directa.",
+    "clarity.card2.title": "Visitas y seguimiento",
+    "clarity.card2.text": "Las visitas se coordinan con cita previa. Esto ayuda a mantener orden, contexto y una experiencia más seria para ambas partes.",
+    "clarity.card3.title": "Documentación en etapas",
+    "clarity.card3.text": "La documentación completa se comparte en el momento adecuado del proceso, no como información abierta para cualquier contacto superficial.",
+    "clarity.primary": "Hablar por WhatsApp",
     "contact.lead": "Si una propiedad te interesa, el primer paso es escribirnos por WhatsApp. Así podemos entender mejor tu intención, resolver dudas iniciales y orientarte con más claridad en el siguiente paso.",
     "contact.primary": "Enviar mensaje",
-    "contact.secondary": "Instagram",
+    "contact.secondary": "Ver FAQ",
     "contact.cardTitle": "Información de contacto",
     "contact.helper": "Atención inicial en español e inglés. Visitas con cita previa y seguimiento directo por WhatsApp.",
                 "contact.signal1": "Atención bilingüe",
@@ -95,6 +111,9 @@ const translations = {
     "footer.note1": "Información sujeta a disponibilidad y cambios sin previo aviso.",
     "footer.note2": "Las visitas se coordinan con cita previa.",
     "footer.note3": "La documentación completa se comparte dentro del proceso de atención según el perfil del prospecto.",
+    "footer.signal1": "San Cristóbal de las Casas",
+    "footer.signal2": "Atención ES / EN",
+    "footer.signal3": "Visitas con cita",
     "gallery.eyebrow": "Galería",
     "floating.whatsapp": "WhatsApp"
   },
@@ -105,6 +124,7 @@ const translations = {
     "nav.properties": "Properties",
     "nav.testimonials": "Testimonials",
     "nav.contact": "Contact",
+    "nav.faq": "FAQ",
     "nav.faq": "FAQ",
     "trust.card1.title": "Protected information",
     "trust.card1.text": "Sensitive details are shared at the right stage of the process to protect both the client and the operation.",
@@ -149,6 +169,11 @@ const translations = {
     "properties.lead": "This website version already shows several properties and keeps the structure ready to add more land or homes in the future.",
     "properties.note": "Exact location, final price and full documentation are shared during the service process with qualified prospects.",
     "properties.footerNote": "If you do not yet see the type of property you are looking for, the inventory can grow as the commercial operation expands.",
+    "properties.marketArea": "Area",
+    "properties.marketZone": "General zone",
+    "properties.marketPrice": "Price",
+    "properties.priceOnRequest": "On request",
+    "properties.ctaDetails": "Request price and details",
     "properties.tierFeatured": "Main opportunity",
     "properties.tierUrban": "Urban option",
     "properties.tierAlternative": "Alternative option",
@@ -165,9 +190,19 @@ const translations = {
     "testimonials.lead": "For now this block works as an elegant placeholder. Later it can be replaced with real reviews, purchase stories or verified client experiences.",
     "contact.eyebrow": "Contact",
     "contact.title": "Let’s talk and coordinate the next step.",
+    "clarity.eyebrow": "Clarity and safety",
+    "clarity.title": "Before sharing more details, we first structure the conversation.",
+    "clarity.lead": "This website is not designed to expose everything immediately, but to help the prospect arrive better oriented so the next step has more context.",
+    "clarity.card1.title": "Location and sensitive details",
+    "clarity.card1.text": "Exact location and certain details are shared within the process once there is genuine interest and direct conversation.",
+    "clarity.card2.title": "Visits and follow-up",
+    "clarity.card2.text": "Visits are scheduled by appointment. This helps maintain order, context and a more serious experience for both sides.",
+    "clarity.card3.title": "Documentation by stages",
+    "clarity.card3.text": "Complete documentation is shared at the appropriate moment of the process, not as open information for any superficial contact.",
+    "clarity.primary": "Talk on WhatsApp",
     "contact.lead": "If a property interests you, the first step is to message us on WhatsApp. That helps us understand your intent, answer initial questions and guide you more clearly to the next stage.",
     "contact.primary": "Send message",
-    "contact.secondary": "Instagram",
+    "contact.secondary": "View FAQ",
     "contact.cardTitle": "Contact information",
     "contact.helper": "Initial attention in Spanish and English. Visits by appointment and direct WhatsApp follow-up.",
                 "contact.signal1": "Bilingual attention",
@@ -192,6 +227,9 @@ const translations = {
     "footer.note1": "Information subject to availability and changes without prior notice.",
     "footer.note2": "Visits are scheduled by appointment.",
     "footer.note3": "Complete documentation is shared during the service process according to the prospect profile.",
+    "footer.signal1": "San Cristóbal de las Casas",
+    "footer.signal2": "Spanish / English support",
+    "footer.signal3": "Visits by appointment",
     "gallery.eyebrow": "Gallery",
     "floating.whatsapp": "WhatsApp"
   }
@@ -280,6 +318,14 @@ function renderServiceSignals() {
 }
 
 
+
+function renderFooterSignals() {
+  const container = document.getElementById("footer-signals");
+  if (!container) return;
+  const labels = [t("footer.signal1"), t("footer.signal2"), t("footer.signal3")];
+  container.innerHTML = labels.map((label) => `<div class="footer-signal">${label}</div>`).join("");
+}
+
 function renderHeroFacts() {
   const container = document.getElementById("hero-facts");
   if (!container || !propertyData.length) return;
@@ -354,9 +400,23 @@ function renderProperties() {
             </div>
           </div>
         </div>
+        <div class="market-grid">
+          <div class="market-item">
+            <div class="market-label">${t("properties.marketArea")}</div>
+            <div class="market-value">${property.area}</div>
+          </div>
+          <div class="market-item">
+            <div class="market-label">${t("properties.marketZone")}</div>
+            <div class="market-value">${zone}</div>
+          </div>
+          <div class="market-item">
+            <div class="market-label">${t("properties.marketPrice")}</div>
+            <div class="market-value price-on-request">${t("properties.priceOnRequest")}</div>
+          </div>
+        </div>
         <div class="property-meta">
-          <span class="meta-pill">${property.area}</span>
           <span class="meta-pill">${services}</span>
+          <span class="meta-pill">${property.gallery.length} ${t("properties.photos")}</span>
         </div>
         <div class="muted">${description}</div>
         <div class="property-highlights">
@@ -366,7 +426,7 @@ function renderProperties() {
           ${features.map((feature) => `<span class="feature-pill">${feature}</span>`).join("")}
         </div>
         <div class="property-actions">
-          <a class="button" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(message + (currentLang === "es" ? " [Fuente: ficha del sitio]" : " [Source: website property card]"))}">${currentLang === "es" ? "Solicitar información" : "Request information"}</a>
+          <a class="button" target="_blank" rel="noopener noreferrer" href="${makeWhatsAppLink(message + (currentLang === "es" ? " [Fuente: ficha del sitio]" : " [Source: website property card]"))}">${t("properties.ctaDetails")}</a>
           <button class="button-secondary open-gallery" data-id="${property.id}">${currentLang === "es" ? "Ver fotos" : "View gallery"}</button>
         </div>
       </div>
@@ -419,6 +479,10 @@ function updateHero() {
   if (heroSecondary) heroSecondary.href = `#property-${firstProperty.id}`;
   document.getElementById("hero-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi el sitio de OLA Grupo Inmobiliario y quiero más información." : "Hi, I saw the OLA Grupo Inmobiliario website and I would like more information.");
   document.getElementById("contact-whatsapp").href = makeWhatsAppLink(currentLang === "es" ? "Hola, quiero recibir información sobre sus propiedades." : "Hi, I would like to receive information about your properties.");
+  const clarityWhatsapp = document.getElementById("clarity-whatsapp");
+  if (clarityWhatsapp) {
+    clarityWhatsapp.href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi su proceso en el sitio y me gustaría continuar por WhatsApp. [Fuente: claridad]" : "Hi, I saw your process on the website and I would like to continue on WhatsApp. [Source: clarity]");
+  }
   const floating = document.getElementById("floating-whatsapp");
   if (floating) {
     floating.href = makeWhatsAppLink(currentLang === "es" ? "Hola, vi su sitio web y me gustaría recibir información sobre sus propiedades. [Fuente: botón flotante]" : "Hi, I saw your website and I would like information about your properties. [Source: floating button]");
@@ -533,6 +597,7 @@ function bindModal() {
 }
 function renderAll() {
   applyTranslations();
+  renderFooterSignals();
   renderHeroFacts();
   renderProcess();
   renderProperties();

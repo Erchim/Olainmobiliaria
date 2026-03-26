@@ -126,3 +126,27 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Datos rápidos del inmueble principal añadidos en el hero (superficie, zona y servicios)
 - CTA secundario del hero ahora lleva directo al terreno principal
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 20
+- Paso 2 del enfoque “landing como selling gateway”
+- Tarjetas de propiedades con resumen estilo marketplace
+- Ahora cada ficha muestra de forma más clara: superficie, zona general y precio por solicitud
+- CTA principal de cada propiedad ajustado a “solicitar precio y detalles”
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 21
+- Paso 3 del enfoque “landing como selling gateway”
+- Nueva sección de claridad y seguridad antes del contacto
+- Refuerzo del proceso: ubicación sensible, visitas con cita y documentación por etapas
+- CTA de transición a WhatsApp desde la sección de claridad
+- Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 22
+- Eliminado el CTA de Instagram genérico/placeholder para evitar señales falsas de confianza
+- CTA secundario de contacto ahora lleva a FAQ, que sí aporta contexto real al lead
+- Señales compactas en el footer: ciudad, atención bilingüe y visitas con cita
+- Paso pequeño orientado a que el sitio se sienta más “public-ready” y menos demo
+- Validación de sintaxis JS: OK
