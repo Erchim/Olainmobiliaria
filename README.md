@@ -150,3 +150,10 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Señales compactas en el footer: ciudad, atención bilingüe y visitas con cita
 - Paso pequeño orientado a que el sitio se sienta más “public-ready” y menos demo
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 23
+- Actualizada la propiedad rústica / 37.5 km con foto real local
+- Imagen real usada como cover y galería del lote en zona de montaña
+- Ajuste menor de copy para que la ficha se lea más cercana al objeto real
+- Validación de sintaxis JS: OK

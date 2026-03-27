@@ -65,26 +65,25 @@ const propertyData = [
     status: "available",
     area: "674 m²",
     services: ["Acceso por camino", "Entorno natural"],
-    zoneEs: "Entorno montañoso cerca de la carretera de cuota",
-    zoneEn: "Mountain setting near the toll road",
-    titleEs: "Terreno rústico con vistas y entorno natural",
-    titleEn: "Rustic lot with views and natural surroundings",
+    zoneEs: "Zona montañosa cercana a la carretera de cuota, rumbo al km 37.5",
+    zoneEn: "Mountain area near the toll road, around km 37.5",
+    titleEs: "Terreno rústico con vista natural en zona de montaña",
+    titleEn: "Rustic lot with natural views in a mountain area",
     categoryEs: "Terreno rústico",
     categoryEn: "Rustic land",
-    shortEs: "Propiedad en zona alta con vistas a montañas y bosque, ideal para un proyecto de descanso o vivienda con privacidad.",
-    highlightsEs: ["Entorno natural y lectura visual más abierta.", "Buen potencial para perfil de retiro o descanso.", "Opción distinta dentro de la vitrina frente a los terrenos urbanos."],
-    highlightsEn: ["Natural surroundings and a more open visual feel.", "Good potential for a retreat-oriented buyer profile.", "A different option within the showcase compared with the urban lots."],
-    shortEn: "Property in an elevated area with mountain and forest views, ideal for a retreat or private home project.",
+    shortEs: "Terreno rústico en una zona de montaña cercana a la carretera de cuota, con vista natural y un entorno más retirado. Una opción para quien busca una propiedad con perfil distinto dentro de la vitrina.",
+    highlightsEs: ["Vista natural hacia zona de montaña.", "Perfil más retirado frente a los terrenos urbanos.", "Opción distinta dentro de la vitrina para comprador de terreno rústico."],
+    highlightsEn: ["Natural mountain-facing view.", "A more secluded profile compared with the urban lots.", "A distinct showcase option for rustic-land buyers."],
+    shortEn: "Rustic lot in a mountain area near the toll road, with natural views and a more secluded setting. An option for buyers looking for a different profile within the showcase.",
     featuresEs: ["Vistas abiertas", "Entorno boscoso", "Acceso rápido a la carretera", "Ideal para proyecto residencial"],
     featuresEn: ["Open views", "Forest surroundings", "Fast road access", "Ideal for residential project"],
     badgeEs: "Próxima oportunidad",
     badgeEn: "Opportunity",
     whatsappEs: "Hola, vi el terreno rústico y quiero conocer más detalles.",
     whatsappEn: "Hi, I saw the rustic lot and I would like more details.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+    image: "assets/properties/terreno-huitepec/cover.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80"
+      "assets/properties/terreno-huitepec/1.jpg"
     ]
   }
 ];
