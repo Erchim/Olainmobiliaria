@@ -157,3 +157,10 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Imagen real usada como cover y galería del lote en zona de montaña
 - Ajuste menor de copy para que la ficha se lea más cercana al objeto real
 - Validación de sintaxis JS: OK
+
+
+## Cambios de la versión 24
+- Integrada una parte pública y resumida del origen del proyecto / historia del dueño
+- Añadido bloque explícito de confianza sobre pago únicamente a la firma de escritura
+- Señal clara sobre revisión documental con notario de confianza del cliente
+- Validación de sintaxis JS: OK

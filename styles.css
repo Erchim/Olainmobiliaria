@@ -890,3 +890,31 @@ section,
   color: var(--text);
   font-size: .9rem;
 }
+
+
+.founder-note {
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(240,201,106,.14);
+}
+.founder-note-title,
+.payment-assurance-title {
+  color: var(--gold-soft);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.founder-note-text,
+.payment-assurance-text {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.payment-assurance {
+  margin-top: 18px;
+  padding: 20px 22px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
+  border: 1px solid rgba(240,201,106,.18);
+  box-shadow: 0 18px 48px rgba(0,0,0,.18);
+}
