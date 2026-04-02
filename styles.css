@@ -918,3 +918,7 @@ section,
   border: 1px solid rgba(240,201,106,.18);
   box-shadow: 0 18px 48px rgba(0,0,0,.18);
 }
+
+
+#payment { padding-top: 8px; }
+#approach { padding-top: 10px; }
