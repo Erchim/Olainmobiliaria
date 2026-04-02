@@ -166,25 +166,9 @@ Las iteraciones posteriores introdujeron una regresión en JavaScript. En vez de
 - Validación de sintaxis JS: OK
 
 
-## Cambios de la versión 25
-- Reescritura principal del sitio según la nueva dirección acordada con el propietario
-- Eliminadas las secciones: proceso de atención, FAQ, claridad y seguridad, testimonios
-- Reorganizado el sitio alrededor de: información general, por qué elegir OLA, proceso de trabajo, origen del proyecto, enfoque y propiedades
-- Subido y reubicado el bloque de pago únicamente a la firma de escritura
-- Actualizada la ficha principal de Huitepec a 360 m², fraccionamiento privado, agua, luz, drenaje e instalaciones subterráneas
-- Validación de sintaxis JS: /mnt/data/ola-inmobiliaria-v25/script.js:53
-    "properties.note": ""
-    ^^^^^^^^^^^^^^^^^
-
-SyntaxError: Unexpected string
-[90m    at wrapSafe (node:internal/modules/cjs/loader:1662:18)[39m
-[90m    at checkSyntax (node:internal/main/check_syntax:78:3)[39m
-
-Node.js v22.16.0
-
-
-
-## Fix de la versión 25
-- Corregidas comas faltantes en el bloque de traducciones
-- Limpieza menor de claves no usadas en navegación
+## Cambios de la versión 26
+- Nueva edición del sitio basada en la versión estable anterior, no sobre la rama rota
+- Aplicados los cambios principales acordados con el propietario en hero, información general, por qué elegir OLA, proceso de trabajo, origen del proyecto, enfoque y propiedad principal
+- Eliminadas las secciones que se pidió quitar: proceso de atención, FAQ, claridad y seguridad, testimonios
+- Reubicado el bloque de pago únicamente a la firma de escritura justo después de la información general
 - Validación de sintaxis JS: OK
